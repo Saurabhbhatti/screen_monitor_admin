@@ -1,0 +1,99 @@
+.attendace-container {
+  @apply flex max-h-[200px] items-center justify-between flex-wrap gap-4;
+}
+
+.attendace-search-container {
+  @apply flex justify-between w-full items-center flex-wrap gap-4;
+}
+
+.attendance-left {
+  @apply flex items-center space-x-4;
+}
+
+.attendance-right {
+  @apply flex items-center space-x-4 justify-end;
+}
+
+.attendance-input-container {
+  @apply flex items-center space-x-4;
+}
+
+.attendance-date-picker {
+  @apply border p-2 w-56 rounded-md mt-0;
+}
+
+.adduser-button-style {
+  @apply bg-primary text-white shadow-primary/60 relative flex items-center justify-center rounded-md border border-transparent px-5 py-2 gap-2 text-sm font-semibold shadow-[0_10px_20px_-10px] outline-none transition duration-300;
+}
+
+.table {
+  @apply min-w-full border-collapse;
+}
+
+.attendace-table-container {
+  @apply mt-5 p-0 border-0 overflow-hidden flex flex-col;
+}
+
+.attendace-table-wrapper {
+  @apply overflow-x-auto;
+}
+
+.table-header-cell {
+  @apply p-10 bg-gray-300 font-extrabold whitespace-pre-line font-bold;
+  padding-left: 0.5rem !important;
+  text-wrap: nowrap
+}
+
+.table-header-cell-first {
+  @apply left-0;
+}
+
+.table-header-cell-last {
+  @apply right-0;
+  text-wrap: nowrap
+}
+
+.table-cell-sticky-left {
+  @apply sticky left-0 bg-white;
+}
+
+.table-cell {
+  @apply p-2;
+}
+
+.wo-text {
+  @apply text-gray-700 font-bold;
+}
+
+.table-cell-sticky-right {
+  @apply sticky right-0 bg-white;
+}
+
+.page-data-container {
+  @apply mt-5 flex self-end mr-8;
+}
+
+.time-activity-input-wrapper {
+  @apply relative w-[200px];
+}
+
+.ul-list {
+  @apply inline-flex items-center space-x-1 rtl:space-x-reverse m-auto mb-4;
+  list-style-type: none !important;
+}
+
+.prev-btn {
+  @apply flex justify-center font-semibold p-2 rounded-full transition;
+}
+
+.next-btn {
+  @apply w-5 h-5 -rotate-90 rtl:rotate-90;
+}
+
+.prev-icon {
+  @apply w-5 h-5 rotate-90 rtl:rotate-90;
+}
+
+.number-activePage {
+  @apply flex justify-center font-semibold px-3.5 py-2 rounded-full transition;
+}

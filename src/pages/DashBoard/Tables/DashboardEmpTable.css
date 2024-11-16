@@ -1,0 +1,44 @@
+.main-table-wrap {
+  @apply bg-white shadow rounded-lg overflow-hidden;
+  width: 100%;
+}
+
+.table-container {
+  @apply relative;
+  max-height: 300px; /* Set the max height for the table */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.table-head {
+  @apply sticky top-2 bg-white;
+  z-index: 10;
+}
+
+.table-body-wrap {
+  @apply overflow-y-auto; /* Enable vertical scrolling for table body */
+  max-height: 300px; /* Adjust for header space */
+}
+
+.table-row-styling {
+  @apply border-b;
+}
+
+.name-clm-styling {
+  @apply px-4 py-2 ltr:rounded-l-md rtl:rounded-r-md;
+}
+
+.work-hour-styling {
+  @apply hidden md:table-cell px-4 py-2;
+}
+
+.descripency-styling {
+  @apply px-4 py-2 ltr:rounded-r-md rtl:rounded-l-md;
+}
+
+.status-columns-wrap {
+  @apply relative h-1.5 bg-gray-200 dark:bg-dark/40 rounded-full w-24;
+}
+
+.status-viewer-columns {
+  @apply text-xs text-gray-500;
+}

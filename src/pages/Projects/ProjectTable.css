@@ -1,0 +1,86 @@
+.page-data-container {
+  @apply mt-5 flex self-end mr-8;
+}
+
+.ul-list {
+  @apply inline-flex items-center space-x-1 rtl:space-x-reverse m-auto mb-4;
+  list-style-type: none !important;
+}
+
+.prev-btn {
+  @apply flex justify-center font-semibold p-2 rounded-full transition;
+}
+
+.page-number-enable {
+  @apply bg-gray-400 text-white cursor-not-allowed;
+}
+
+.page-number-disable {
+  @apply bg-white-light text-dark hover:text-white hover:bg-primary;
+}
+
+.btn-dark {
+  @apply dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary;
+}
+
+.prev-icon {
+  @apply w-5 h-5 rotate-90 rtl:rotate-90;
+}
+.number-activePage {
+  @apply flex justify-center font-semibold px-3.5 py-2 rounded-full transition;
+}
+
+.active-number {
+  @apply bg-primary text-white;
+}
+
+.next-btn {
+  @apply w-5 h-5 -rotate-90 rtl:rotate-90;
+}
+
+.project-name {
+  @apply flex items-center w-max;
+}
+
+.member-section {
+  @apply flex items-center;
+}
+
+.add-member-btn {
+  @apply flex items-center justify-center w-9 h-9 border-2 border-dashed border-gray-300 rounded-full hover:border-gray-400;
+}
+
+.plus-icon {
+  @apply text-gray-400 text-xl;
+}
+
+.member-tooltip {
+  @apply w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center border-2 border-white;
+}
+
+.edit-button {
+  @apply flex gap-4 items-center justify-center;
+}
+
+.member-tiling {
+  @apply w-10 h-10 rounded-full bg-gray-600 text-white flex items-center justify-center border-2 border-white;
+}
+
+.sub-member {
+  @apply flex flex-wrap -space-x-2 sm:-space-x-1 md:-space-x-2 lg:-space-x-3;
+}
+
+.edit-icon {
+  @apply w-5 h-5 text-warning;
+}
+.delete-icon {
+  @apply text-danger w-6 h-6;
+}
+
+.no-data-alert {
+  @apply flex justify-center items-center w-full h-32;
+}
+
+.table-header {
+  @apply bg-gray-300 font-extrabold;
+}

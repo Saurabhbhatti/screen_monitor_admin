@@ -1,0 +1,192 @@
+/* General Panel */
+.panel {
+  @apply border-none;
+}
+
+/* Header */
+.setting-header {
+  @apply flex flex-col mb-5;
+}
+
+/* Main Container */
+.settings-container {
+  @apply flex flex-col xl:flex-row gap-5 relative;
+}
+
+.setting-custom-loading {
+  @apply flex justify-center items-center w-full h-32;
+}
+
+/* Menu Bar */
+.menu-bar {
+  @apply min-w-[20rem] max-h-full overflow-y-auto border-r border-[#ebedf2];
+}
+
+.menu-button {
+  @apply w-full px-3 py-2 text-left transition-colors duration-300 rounded-md h-10 m-0;
+}
+
+.menu-button:hover {
+  @apply bg-gray-100;
+}
+
+/* Apply primary styling for active module button */
+.menu-button.active {
+  @apply bg-primary text-white;
+}
+
+.menu-button.inactive {
+  @apply text-gray-700;
+}
+
+/* Content Area */
+.content-area {
+  @apply p-4 flex-1 overflow-y-auto rounded-2xl shadow-lg;
+}
+
+.content-header {
+  @apply flex items-center p-4 border-b border-gray-300;
+}
+
+.icon-menu {
+  @apply xl:hidden block mr-4;
+}
+
+/* Typography */
+.setting-title {
+  @apply text-2xl font-semibold mb-3;
+}
+
+.module-title {
+  @apply text-xl font-semibold;
+}
+
+.module-description {
+  @apply text-lg;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .settings-container {
+    @apply flex-col;
+  }
+
+  .menu-bar {
+    @apply w-full max-h-[300px];
+  }
+
+  .setting-label {
+    @apply text-base;
+  }
+
+  .update-button {
+    @apply w-full;
+  }
+}
+
+@media (max-width: 600px) {
+  input {
+    @apply w-full;
+  }
+}
+
+/* Setting Option Container */
+.setting-option-container {
+  @apply absolute xl:relative p-0 flex-none w-80 border-0 overflow-y-auto z-10 xl:block divide-y divide-[#ebedf2] dark:divide-[#191e3a];
+}
+
+.setting-option-button {
+  @apply w-full flex items-center p-6 hover:bg-gray-100 dark:hover:bg-[#192A3A];
+}
+
+/* Form Labels */
+.setting-label {
+  @apply block font-medium text-lg text-black font-bold;
+}
+
+.range-title {
+  @apply mr-2 w-1/12 flex-shrink-0;
+}
+
+/* Button Styles */
+.update-button {
+  @apply mt-2 px-4 py-2 bg-primary text-white rounded;
+}
+
+.update-button-style {
+  @apply border-primary bg-primary text-white shadow-primary/60 relative flex items-center justify-center rounded-md border px-5 py-2 text-sm font-semibold shadow-[0_10px_20px_-10px] outline-none transition duration-300 mt-10;
+}
+
+/* Leave Settings */
+.leave-settings-container {
+  @apply p-4;
+}
+
+.leave-color-item {
+  @apply flex items-center mb-2;
+}
+
+.leave-color-item-label {
+  @apply w-40;
+}
+
+.leave-color-input-container {
+  @apply flex relative flex-1 ml-4 text-center items-center w-2/3;
+}
+
+.leave-color-input {
+  @apply border border-gray-300 rounded w-52 px-4 py-2 text-center;
+}
+
+.leave-color-preview {
+  @apply absolute top-1/2 left-2 -translate-y-1/2 w-6 h-6 border border-gray-400 rounded cursor-pointer z-10;
+}
+
+.color-picker-container {
+  @apply bg-white border border-gray-300 rounded shadow-lg z-10;
+}
+
+/* Error Message */
+.error-message {
+  @apply text-red-500 text-sm;
+}
+
+/* Setting Main Container */
+.setting-main-container {
+  @apply flex items-center space-x-4;
+}
+
+/* Input Field Container */
+.input-field-container {
+  @apply flex-1;
+}
+
+.input-field {
+  @apply border border-gray-400 h-9 w-full;
+}
+
+/* leaveSetting */
+.leaveSetting-main-container{
+  @apply flex flex-wrap;
+}
+
+.leaveSetting-container{
+  @apply flex-1 min-w-[150px] md:min-w-[200px] mr-4 mb-4;
+}
+
+.leaveSetting-label-div {
+ @apply flex-1 min-w-[150px] md:min-w-[200px] mb-4;
+}
+
+.leaveSetting-value {
+  @apply border border-gray-400 h-9 w-full mt-1.5;
+}
+
+.leaveSetting-left-side {
+  @apply flex flex-col w-1/2 pr-4;
+}
+
+.leaveSetting-right-side {
+  @apply flex flex-col w-1/2 pl-4;
+}
+

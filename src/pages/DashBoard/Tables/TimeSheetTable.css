@@ -1,0 +1,19 @@
+.table-main-wrap-style{
+  @apply flex items-center justify-between mb-5;
+}
+
+.tab-title-style{
+  @apply font-semibold text-lg dark:text-white-light;
+}
+
+.drop-button-style{
+  @apply font-semibold hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-600;
+}
+
+.data-table-styles{
+  @apply overflow-x-auto;
+}
+
+.table-head-styling{
+  @apply text-center;
+}

@@ -1,0 +1,109 @@
+.holiday-header {
+  @apply flex flex-col mb-3;
+}
+
+.holiday-heading {
+  @apply text-2xl font-semibold mb-3;
+}
+
+.add-holiday-button {
+  @apply flex items-center justify-end;
+}
+
+.holiday-table-container {
+  @apply p-0 border-0 overflow-hidden flex flex-col w-full h-full;
+}
+
+.holiday-container {
+  @apply flex w-full h-full gap-5 box-border;
+}
+
+.tableSection,
+.formSection {
+  @apply w-1/2 bg-white shadow-lg rounded-lg;
+}
+
+.holiday-table-wrapper {
+  @apply overflow-x-auto;
+}
+
+.table {
+  @apply min-w-full border-collapse;
+}
+
+.formSection {
+  @apply h-full w-full p-5
+}
+
+.table-header-cell-first {
+  @apply left-0;
+}
+
+.custom-loading {
+  @apply flex justify-center items-center w-full h-32
+}
+
+.table-cell {
+  @apply p-2;
+}
+
+.table-cell-sticky-left {
+  @apply sticky left-0 bg-white;
+}
+
+.custome-button-holiday {
+  @apply flex gap-4 items-center
+}
+
+.formSection h3 {
+  @apply mb-5 text-gray-800 text-lg;
+}
+
+.formGroup {
+  @apply mb-5 flex flex-col;
+}
+
+.formGroup label {
+  @apply mb-2 font-semibold text-gray-700;
+}
+
+.formGroup input {
+  @apply p-2.5 border border-gray-300 rounded-md text-base w-full;
+}
+
+.flatpicker {
+  @apply w-auto py-1.5;
+  margin-top: 0;
+}
+
+.formGroup input:focus {
+  @apply outline-none border-blue-500 shadow-lg;
+}
+
+.action-button {
+  @apply mt-4 flex justify-end;
+}
+
+.button-style {
+  @apply ml-4 px-5 py-2 text-sm font-semibold border rounded-md transition duration-300 text-white bg-primary;
+}
+
+.holiday-cancel-button {
+  @apply px-3 py-1 text-sm font-medium border rounded-md transition duration-300 hover:shadow-none text-red-500 border-red-500;
+}
+
+.selected-holidays-actions {
+  @apply px-4.5 py-2.5 mb-1 rounded-lg bg-blue-100;
+}
+
+.selected-item-count {
+  @apply text-sm text-blue-700 font-semibold;
+}
+
+.delete-button {
+  @apply flex items-center bg-transparent border-0 text-red-600 cursor-pointer text-sm;
+}
+
+.delete-button .text-danger {
+  @apply mr-1.5 text-red-600 w-5 h-5;
+}

@@ -1,0 +1,158 @@
+.custom-table {
+  @apply mt-1 w-full min-w-max table-auto text-left min-h-[140px];
+}
+
+.custom-table-header {
+  @apply border-y border-blue-gray-100 bg-blue-gray-50/50 p-4 w-auto;
+}
+
+.plus-icon-container {
+  @apply flex items-center justify-center w-9 h-9 border-2 mr-2 border-dashed border-gray-300 rounded-full hover:border-gray-400;
+}
+
+.header-label {
+  @apply bg-blue-gray-50 p-2 text-black pt-3 text-lg font-bold;
+}
+
+.table-header {
+  @apply pl-3 border-b border-blue-gray-50 pr-1;
+}
+
+.table-data {
+  @apply p-2 border-b border-blue-gray-50 items-center;
+}
+
+.edit-data {
+  @apply dark:text-black text-left flex space-x-3 justify-items-center;
+}
+
+.pagination-container {
+  @apply flex items-end justify-end gap-4 mt-4 pr-5 pb-5;
+}
+
+.pagination-button {
+  @apply flex items-center rounded-full mt-2 bg-gray-100 h-[40px] w-[40px] justify-center;
+}
+
+.page-numbers {
+  @apply flex items-center gap-2;
+}
+
+.loader-contain {
+  @apply flex items-center justify-center h-[100px] mt-12;
+}
+
+.render-button {
+  @apply px-3 py-1 rounded-full focus:outline-none h-10 w-10;
+}
+.render-active-button {
+  @apply bg-blue-500 text-white;
+}
+.render-hover-button {
+  @apply hover:bg-blue-500 hover:text-white;
+}
+
+.spinner-container {
+  @apply justify-center flex h-[500px] items-center;
+}
+
+.main-div {
+  @apply p-0 border-0 overflow-hidden flex flex-col mt-5;
+}
+
+.table-header-styling {
+  @apply bg-gray-300 font-extrabold;
+}
+
+.custom-loader-div {
+  @apply flex justify-center items-center w-full h-32;
+}
+
+.avatar-main-div {
+  @apply flex items-center w-max;
+}
+
+.image-styling {
+  @apply h-8 w-8 rounded-full object-cover ltr:mr-2 rtl:ml-2;
+}
+
+.project-button-wrapper {
+  @apply flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-2 mt-2;
+}
+
+.add-project-styling {
+  @apply flex items-center justify-center w-8 h-8 border-2 border-dashed border-gray-300 rounded-full hover:border-gray-400;
+}
+
+.plus-span-styling {
+  @apply text-gray-400 text-xl;
+}
+
+.tooltip-wrapper {
+  @apply flex flex-wrap -space-x-2;
+}
+
+.slice-wrapper {
+  @apply flex flex-col;
+}
+
+.project-length-wrapper {
+  @apply w-8 h-8 rounded-full bg-gray-600 text-white border-2 border-white flex items-center justify-center;
+}
+
+.buttongroup-wrapper {
+  @apply flex gap-4 items-center;
+}
+
+.editicon-styling {
+  @apply w-6 h-6 text-warning;
+}
+
+.deleteicon-styling {
+  @apply text-danger w-6 h-6;
+}
+
+.no-data-message-wrapper {
+  @apply flex justify-center items-center w-full h-32;
+}
+
+.pagination-wrapper {
+  @apply mt-5 flex self-end mr-8;
+}
+
+.pagination-button-row {
+  @apply inline-flex items-center space-x-1 rtl:space-x-reverse m-auto mb-4;
+}
+
+.caretdownicon-styling {
+  @apply w-5 h-5 rotate-90 rtl:-rotate-90;
+}
+
+.caret-styling {
+  @apply w-5 h-5 -rotate-90 rtl:rotate-90;
+}
+
+.list-ul {
+  @apply inline-flex items-center space-x-1 rtl:space-x-reverse m-auto mb-4;
+  list-style-type: none !important;
+}
+
+.member-tooltip {
+  @apply w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center border-2 border-white;
+}
+
+.add-icon-styling {
+  @apply flex items-center gap-1;
+}
+
+.parent-tooltip-wrap {
+  @apply flex -space-x-1;
+}
+
+.child-tooltip-wrape {
+  @apply w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center border-2 border-white;
+}
+
+.project-length-wrap {
+  @apply w-10 h-10 rounded-full bg-gray-600 text-white flex items-center justify-center border-2 border-white;
+}

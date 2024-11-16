@@ -1,0 +1,36 @@
+.main-transition{
+  @apply fixed inset-0 bg-[black]/60
+}
+
+.dialog-div{
+  @apply fixed inset-0 overflow-y-auto
+}
+
+.sub-dialog-div{
+  @apply flex min-h-full items-center justify-center px-4 py-8
+}
+
+.dialog-panel-list{
+  @apply  border-0 p-0 rounded-lg overflow-hidden w-full max-w-lg text-black dark:text-white-dark
+}
+
+
+.closeIcon{
+  @apply absolute top-4 ltr:right-4 rtl:left-4 text-gray-400 hover:text-gray-800 dark:hover:text-gray-600 outline-none
+} 
+
+.btn-div{
+  @apply flex justify-end items-center mt-8
+}
+
+.save{
+  @apply relative flex items-center justify-center rounded-md border px-5 py-2 text-sm font-semibold shadow-[0_10px_20px_-10px] outline-none transition duration-300 hover:shadow-none ltr:ml-4 rtl:mr-4
+}
+
+.btn-inable-save{
+  @apply border-primary bg-primary text-white shadow-primary/60
+}
+
+.btn-disable-save{
+  @apply border-gray-400 bg-gray-400 text-gray-200 shadow-none 
+}

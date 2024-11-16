@@ -1,0 +1,346 @@
+.panel-wrapper {
+  @apply pt-5 pb-8;
+}
+
+.card-panel {
+  @apply flex h-auto w-full gap-5;
+}
+
+.icon-pencil {
+  @apply ltr:ml-auto rtl:mr-auto p-2 rounded-full static;
+}
+
+.profile-image-main-div {
+  @apply object-cover h-[160px] w-[160px] rounded-lg group-hover:opacity-70 group-hover:brightness-90 transition-all duration-300;
+}
+
+.edit-icon-label {
+  @apply absolute top-0.5 right-0.5 bg-primary p-1 rounded-full cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-300;
+}
+
+.panel-header-profile {
+  @apply flex w-full justify-between bg-gray-200 rounded-2xl p-4;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.panel-title {
+  @apply font-semibold text-lg dark:text-white-light;
+}
+
+.profile-img {
+  @apply w-24 h-24 rounded-full object-cover mb-5;
+}
+
+.profile-name {
+  font-size: 24px;
+  color: black;
+}
+
+.profile-info {
+  @apply w-full h-[140px];
+}
+
+.profile-info-item {
+  @apply flex items-center gap-2;
+}
+
+.profile-contact {
+  @apply mt-7 flex items-center justify-center gap-2;
+}
+
+.task-table-header {
+  @apply font-semibold text-lg dark:text-white-light;
+}
+
+.table-responsive {
+  @apply text-[#515365] dark:text-white-light font-semibold;
+}
+
+.progress-bar {
+  @apply h-1.5 bg-[#ebedf2] dark:bg-dark/40 rounded-full flex w-full;
+}
+
+.panelMain {
+  @apply grid gap-4 w-full md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1;
+}
+
+.buttonProfileDetailsActive,
+.buttonBankDetailsActive,
+.buttonEmergencyContactActive,
+.buttonProfileDocumentActive {
+  @apply bg-primary text-white focus-visible:outline-none;
+}
+
+.buttonProfileDetailsInactive,
+.buttonBankDetailsInactive,
+.buttonEmergencyContactInactive,
+.buttonProfileDocumentInactive {
+  @apply text-gray-700;
+}
+
+.profile-header {
+  @apply flex w-full;
+}
+
+.profile-title {
+  @apply text-2xl font-semibold mb-4;
+}
+
+.profile-flex-container {
+  @apply flex flex-col gap-4;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-700;
+}
+
+.globel-form {
+  @apply mt-1 block border border-gray-300 rounded-md shadow-sm sm:text-sm w-full p-2;
+}
+
+.globel-form-input {
+  @apply mt-1 block border border-gray-300 rounded-md shadow-sm sm:text-sm w-[90%];
+}
+
+.update-button {
+  @apply px-6 py-2 mt-4 text-white hover:bg-white hover:text-black font-semibold rounded-lg shadow-md transition focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75;
+  background-color: rgb(67 97 238 / var(--tw-bg-opacity))
+}
+
+
+.bank-details-header {
+  @apply flex justify-between;
+}
+
+.bank-details-title {
+  @apply text-2xl font-semibold mb-4;
+}
+
+.bank-details-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+}
+
+.emergency-contact-title {
+  @apply text-2xl font-semibold mb-4;
+}
+
+input {
+  @apply mt-0
+}
+
+.emergency-contact-form {
+  @apply grid grid-cols-1 gap-4;
+}
+
+.profile-form-main {
+  @apply flex justify-between;
+}
+
+.profile-detail-title {
+  @apply text-2xl font-semibold mb-4;
+}
+
+.profile-detail-grid {
+  @apply flex flex-row;
+  justify-content: space-around;
+}
+
+.profile-detail-input {
+  @apply mt-1 block w-full text-sm text-gray-500 file:py-2 file:px-4 file:border file:border-gray-300 file:rounded-md file:text-sm file:font-semibold file:bg-gray-50 file:text-gray-700 hover:file:bg-gray-100;
+}
+
+.file-preview {
+  @apply relative;
+}
+
+.image-preview-box {
+  @apply w-[150px] h-auto;
+}
+
+.file-url {
+  @apply mt-1;
+}
+
+.file-url a {
+  @apply no-underline text-blue-500;
+}
+
+.file-url a:hover {
+  @apply underline;
+}
+
+.main-detail {
+  @apply flex flex-col gap-4 w-full pb-4 pr-4 h-[84vh] overflow-auto;
+}
+
+.profile-container {
+  @apply lg:w-full p-8 bg-white shadow-xl rounded-2xl;
+}
+
+.bank-details-container {
+  @apply w-full p-5 bg-white rounded-lg shadow-xl rounded-2xl;
+}
+
+.global-form {
+  @apply flex justify-between p-2 transition-all duration-100 bg-white border border-gray-300 rounded-md box-border min-h-[38px] flex-wrap;
+  @apply w-full min-w-[300px];
+}
+
+.global-form:disabled {
+  @apply bg-gray-200 cursor-not-allowed whitespace-nowrap;
+}
+
+.emergency-contact-container {
+  @apply w-full p-5 bg-white rounded-lg shadow-xl rounded-2xl;
+}
+
+.profile-detail-main {
+  @apply lg:w-full p-8 bg-white rounded-lg shadow-xl rounded-2xl;
+}
+
+.profile-user-details {
+  @apply w-full h-[160px] p-5 border-l-0;
+}
+
+.profile-data-location,
+.profile-email-phone {
+  @apply flex flex-col gap-6;
+  margin-top: 0 !important;
+}
+
+.profile-name-designation {
+  @apply flex flex-col;
+}
+
+.profile-session-title {
+  @apply text-2xl font-semibold mb-4;
+}
+
+.profile-date-picker {
+  @apply p-2 border border-gray-300 rounded-md w-full;
+}
+
+.profile-date-picker:disabled {
+  @apply bg-gray-200 cursor-not-allowed whitespace-nowrap
+}
+
+.profile-select-blood {
+  @apply w-[80%];
+}
+
+@media only screen and (max-width: 768px) {
+  .profile-select-blood {
+    @apply w-full;
+  }
+
+  .main-detail {
+    @apply mt-16 h-[64vh];
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .profile-header {
+    @apply flex flex-col gap-4;
+  }
+
+  .profile-image-div {
+    @apply flex justify-center w-full;
+  }
+
+  .panelMain {
+    @apply h-[74vh];
+  }
+
+  .main-detail {
+    @apply h-[69vh] mt-20;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .profile-header {
+    @apply flex flex-col gap-4;
+  }
+
+  .profile-image-div {
+    @apply flex justify-center w-full;
+  }
+
+  .profile-image-main-div {
+    @apply h-[6.5rem] w-[6.5rem];
+  }
+}
+
+.profile-menu {
+  @apply text-black;
+}
+
+.profile-menu ul {
+  @apply flex gap-4 list-none m-0 pl-4 items-center;
+}
+
+.profile-menu li {
+  @apply text-sm font-semibold px-6 py-3 cursor-pointer transition-transform duration-300 rounded-lg;
+}
+
+.profile-menu li.active {
+  @apply font-bold text-white;
+  background-color: rgb(67 97 238 / var(--tw-bg-opacity));
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+
+.profile-menu li:hover {
+  @apply text-white bg-indigo-700 transform scale-105;
+}
+
+.profile-menu li .menu-icon {
+  @apply mr-2 text-lg;
+}
+
+.profile-menu li.active::after {
+  @apply block w-full h-[2px] bg-white mt-[5px] transition-all duration-300 ease-in-out;
+  content: '';
+}
+
+.profile-menu li:not(.active)::after {
+  content: none;
+}
+
+.profile-menu li:hover {
+  background-color: #4C6EF5;
+}
+
+.profile-menu li.active {
+  transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 768px) {
+  .profile-menu {
+    @apply flex-col gap-4;
+  }
+
+  .profile-menu li {
+    @apply w-full text-center py-3;
+  }
+}
+
+
+.error {
+  @apply text-red-500 text-sm mt-1;
+}
+
+.previewUrl {
+  @apply cursor-pointer flex flex-col w-20 h-20;
+}
+
+.upload-file {
+  @apply w-20 h-20 flex items-center justify-center border border-dashed border-gray-400
+}
+
+.remove-btn {
+  @apply mt-2 text-red-600;
+}
+
+.save-btn {
+  @apply grid grid-cols-1 mt-4 justify-items-end;
+}

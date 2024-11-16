@@ -1,0 +1,43 @@
+.attandence-bar-main-wrape {
+  @apply flex items-center justify-between dark:text-white-light mb-4;
+}
+
+.attamdence-bar-label {
+  @apply font-semibold text-lg;
+}
+
+.attandence-label-styling {
+  @apply block text-white-dark text-sm font-normal;
+}
+
+.attand-bars-box {
+  @apply flex justify-between items-center mx-auto mt-4 gap-2;
+}
+
+.attnd-bar-sub-wrapes {
+  @apply flex flex-col items-center;
+}
+
+.attand-circular-styling {
+  @apply relative w-12 h-12 sm:w-14 sm:h-14;
+}
+
+.attand-bar-value-main-wrap {
+  @apply absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2;
+}
+
+.present-bar-value-wrap {
+  @apply text-center text-lg font-bold text-blue-600 dark:text-blue-500;
+}
+
+.absent-bar-value-wrap {
+  @apply text-center text-lg font-bold text-green-600 dark:text-green-500;
+}
+
+.late-bar-value-wrap {
+  @apply text-center text-lg font-bold text-red-600 dark:text-red-500;
+}
+
+.attand-bars-bottom-label {
+  @apply mt-2 text-center text-sm dark:text-white;
+}

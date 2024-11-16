@@ -1,0 +1,39 @@
+.leave-detail-main-wrap {
+  @apply flex items-center justify-between dark:text-white-light;
+}
+
+.leave-bar-header {
+  @apply font-semibold text-lg;
+}
+
+.leave-circular-main-wrap {
+  @apply flex justify-between items-center mx-auto mt-8 gap-2;
+}
+
+.leave-bars-main-wrapes {
+  @apply flex flex-col items-center;
+}
+
+.circular-bar-main {
+  @apply relative w-12 h-12 sm:w-14 sm:h-14;
+}
+
+.leave-bars-value-main-wrap {
+  @apply absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2;
+}
+
+.taken-leave-val {
+  @apply text-center text-lg font-bold text-blue-600 dark:text-blue-500;
+}
+
+.available-pl-val {
+  @apply text-center text-lg font-bold text-green-600 dark:text-green-500;
+}
+
+.avail-compoff-val {
+  @apply text-center text-lg font-bold text-red-600 dark:text-red-500;
+}
+
+.leave-bar-bottom-title {
+  @apply mt-2 text-center text-sm dark:text-white;
+}

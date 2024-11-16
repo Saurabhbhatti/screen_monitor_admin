@@ -1,0 +1,276 @@
+.panel-container {
+  @apply h-full p-0 lg:col-span-2 w-4/5 max-w-3xl shadow-lg rounded-lg p-6 shadow-lg rounded-lg p-6;
+}
+
+.header {
+  @apply flex justify-between items-center mb-8;
+}
+
+.title {
+  @apply font-semibold text-lg;
+}
+
+.dropdown-btn {
+  @apply hover:text-primary;
+}
+
+.btn {
+  @apply cursor-pointer px-4 py-2 hover:bg-gray-200;
+}
+
+.dash-board-button {
+  @apply cursor-pointer px-4 py-2 pt-[0.4rem];
+}
+.dash-board-button-main {
+  @apply flex border border-primary rounded-[4px] h-[2rem];
+}
+.dash-board-button-weekly {
+  @apply border-blue-700 border-t-0 border-l-0 border-b-0 rounded-none border-r;
+}
+.dash-board-button-weekly-second {
+  @apply bg-primary text-white;
+}
+.dash-board-button-weekly-transparent {
+  @apply bg-transparent text-blue-700;
+}
+.dash-board-button-monthly {
+  @apply border-none rounded-none;
+}
+.dash-board-button-custom {
+  @apply border-t-0 border-r-0 border-b-0 rounded-none border-l border-blue-700;
+}
+.icon {
+  @apply text-black/70 dark:text-white/70 hover:text-primary;
+}
+
+.chart {
+  @apply overflow-hidden;
+}
+
+.chart-hedar {
+  @apply flex justify-center items-center;
+}
+
+.user-label {
+  @apply text-lg font-bold mb-2;
+}
+
+.time-history {
+  @apply flex flex-wrap justify-center mt-3;
+}
+
+.sub-history {
+  @apply flex flex-col items-center mx-4 my-2 space-y-4;
+}
+
+.attendance {
+  @apply flex items-center space-x-2;
+}
+
+.icon-size {
+  @apply w-9 h-9;
+}
+
+.time-lable {
+  @apply text-xl font-semibold;
+}
+
+.component-header-styling {
+  @apply text-lg font-bold mb-3 mt-4;
+}
+
+.filter-wrap-styling {
+  @apply mt-1 mb-4 flex justify-end items-center space-x-4;
+}
+.inline-flex-data-selecter {
+  @apply flex items-baseline;
+}
+.date-picker {
+  @apply border p-2 w-56;
+}
+.user-timeline-main-wrap {
+  @apply flex flex-col gap-4 mb-4;
+}
+
+.user-timeline-sub-wrap {
+  @apply w-3/5;
+}
+
+.user-timeline-header {
+  @apply text-lg font-semibold dark:text-white;
+}
+
+.user-timeline-content {
+  @apply mb-5 flex items-center justify-between;
+}
+.total-timing-main-wrap {
+  @apply flex items-center ml-4;
+}
+
+.content-heading-style {
+  @apply font-semibold text-lg dark:text-white-light;
+}
+
+.graph-main-wrap {
+  @apply bg-white dark:bg-black rounded-lg overflow-hidden pt-4;
+}
+
+.main-progress-div {
+  @apply h-full xl:col-span-3 mb-4;
+}
+
+.progress-sub-div {
+  @apply flex items-center justify-between dark:text-white-light mb-5 mt-5;
+}
+
+.progress-chart-header {
+  @apply font-semibold text-lg;
+}
+.calender-header-style {
+  @apply text-lg font-bold mb-4;
+}
+
+.calender-main-wrap {
+  @apply mb-4 flex items-center sm:flex-row flex-col sm:justify-between justify-center;
+}
+
+.calender-sub-wrap {
+  @apply sm:mb-0 mb-4;
+}
+
+.title-styling {
+  @apply text-lg font-semibold ltr:sm:text-left rtl:sm:text-right text-center;
+}
+
+.holiday-type {
+  @apply font-semibold;
+}
+
+.holiday-card {
+  @apply flex items-center p-3 border mb-2 rounded-lg shadow-lg;
+}
+
+.holiday-card-view {
+  @apply w-16 h-16 p-3 text-center text-white mr-3 flex items-center justify-center;
+}
+
+.holiday-date {
+  @apply text-lg font-bold;
+}
+
+.holiday-type {
+  @apply font-semibold;
+}
+
+.user-info-main-wrap {
+  @apply grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mb-6 text-white;
+}
+
+.user-info-sub-wrap {
+  @apply bg-gradient-to-r from-cyan-500 to-cyan-400;
+}
+
+.user-tile-main-wrap {
+  @apply flex justify-between;
+}
+
+.active-project-viewer {
+  @apply flex items-center mt-5;
+}
+
+.proj-value-viewer {
+  @apply text-3xl font-bold ltr:mr-3 rtl:ml-3;
+}
+
+.project-week-views {
+  @apply flex items-center font-semibold mt-5;
+}
+
+.pro-week-value {
+  @apply ltr:mr-2 rtl:ml-2 shrink-0;
+}
+
+.mamber-wrap {
+  @apply bg-gradient-to-r from-blue-500 to-blue-400;
+}
+
+.member-sub-wrap {
+  @apply flex justify-between;
+}
+.week-value {
+  @apply text-3xl font-bold ltr:mr-3 rtl:ml-3;
+}
+
+.active-member-wraping {
+  @apply flex items-center font-semibold mt-5;
+}
+
+.active-member-sub-wrap {
+  @apply ltr:mr-2 rtl:ml-2 shrink-0;
+}
+
+.timing-graph-wrap {
+  @apply min-h-[325px] grid place-content-center bg-white-light/30 dark:bg-dark dark:bg-opacity-[0.08];
+}
+
+.timing-spin-wrap {
+  @apply animate-spin border-2 border-black dark:border-white !border-l-transparent  rounded-full w-5 h-5 inline-flex;
+}
+
+.dropdown-styling {
+  @apply text-black/70 dark:text-white/70 hover:!text-primary;
+}
+
+.activity-chart-wrap {
+  @apply bg-white dark:bg-black rounded-lg overflow-hidden;
+}
+
+.activity-chart-sub-wrap {
+  @apply min-h-[325px] grid place-content-center bg-white-light/30 dark:bg-dark dark:bg-opacity-[0.08];
+}
+
+.activity-span-style {
+  @apply animate-spin border-2 border-black dark:border-white !border-l-transparent rounded-full w-5 h-5 inline-flex;
+}
+
+.filter-by-styling {
+  @apply ltr:rounded-r-none rtl:rounded-l-none;
+}
+
+.filter-button-styling {
+  @apply ltr:rounded-l-none rtl:rounded-r-none border-l-[#4468fd] before:border-[5px] before:border-l-transparent before:border-r-transparent before:border-t-inherit before:border-b-0 before:inline-block before:border-t-white-light h-full;
+}
+.user-timeline-chart-main {
+  @apply mb-5;
+}
+.dash-board-main-time-chart {
+  @apply flex;
+}
+.total-timing-main-detail {
+  @apply w-2/5;
+}
+@media only screen and (max-width: 1024px) {
+  .user-timeline-sub-wrap {
+    @apply w-full;
+  }
+  .user-timeline-chart-main {
+    @apply w-full;
+  }
+  .graph-main-wrap {
+    @apply w-full;
+  }
+  .dash-board-main-time-chart {
+    @apply flex flex-col;
+  }
+  .total-timing-main-detail {
+    @apply w-full;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .user-timeline-sub-wrap {
+    @apply w-full;
+  }
+  .total-timing-main-wrap {
+    @apply mb-0 ml-0;
+  }
+}

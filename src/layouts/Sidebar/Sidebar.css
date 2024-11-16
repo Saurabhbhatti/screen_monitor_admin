@@ -1,0 +1,98 @@
+.sidebar {
+  @apply fixed top-0 bottom-0 w-64 z-50 transition-all duration-300 shadow-md;
+}
+
+.sidebar.dark {
+  @apply text-white-dark;
+}
+
+.sidebar {
+  @apply bg-white;
+}
+
+.sidebar.dark {
+  @apply bg-black;
+}
+
+/* Logo */
+.main-logo {
+  @apply flex items-center font-semibold py-2 px-4 text-xl no-underline hover:no-underline;
+}
+
+/* Collapse Icon */
+.collapse-icon {
+  @apply w-8 h-8 rounded-full flex items-center justify-center hover:bg-gray-500/10 dark:hover:bg-dark-light/10 dark:text-white-light transition duration-300 rtl:rotate-180;
+}
+
+/* Scrollbar */
+.scrollbar {
+  @apply h-[calc(100vh-80px)] relative;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+  @apply font-semibold space-y-1 p-4 py-0;
+  padding-bottom: 4rem;
+}
+
+.menu {
+  @apply list-none;
+}
+
+.nav-item {
+  @apply mb-1;
+}
+
+.nav-link {
+  @apply block py-2 px-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark;
+}
+
+.nav-link:hover {
+  @apply bg-gray-200 dark:bg-dark-light no-underline;
+}
+
+.nav-link.active {
+  @apply font-bold no-underline;
+}
+
+/* Menu Icons */
+.menu-icon {
+  @apply shrink-0;
+}
+
+.menu .dark .menu-icon {
+  @apply text-[#506690];
+}
+
+.menu .dark .nav-link:hover {
+  @apply text-white;
+}
+
+.menu .dark .nav-link.active {
+  @apply text-white;
+}
+
+.title {
+  @apply ltr:pl-3 rtl:pr-3 text-black dark:text-[#506690] dark:group-hover:text-white-dark;
+  font-size: 0.875rem;
+}
+
+.sidebar .title {
+  font-size: 0.875rem;
+}
+
+.sub-menu .sub-nav-link.active {
+  background-color: transparent !important;
+  border: none;
+  color: #50416f !important;
+  font-weight: bold !important;
+}
+
+.sub-menu .sub-nav-link:hover {
+  background-color: transparent;
+}
+
+.sub-menu .sub-nav-link {
+  padding: 0.5rem 1rem;
+  color: #6b7280;
+}

@@ -1,0 +1,23 @@
+.main-model-wrap{
+  @apply fixed inset-0 overflow-y-auto;
+}
+
+.sub-model-wrap{
+  @apply flex min-h-full items-center justify-center px-4 py-8;
+}
+
+.panel-wrap{
+  @apply  border-0 p-0 rounded-lg overflow-hidden w-full max-w-lg text-black dark:text-white-dark;
+}
+
+.add-modal-button{
+  @apply absolute top-4 ltr:right-4 rtl:left-4 text-gray-400 hover:text-gray-800 dark:hover:text-gray-600 outline-none;
+}
+
+.title-head{
+  @apply text-lg font-medium bg-[#fbfbfb] dark:bg-[#121c2c] ltr:pl-5 rtl:pr-5 py-3 ltr:pr-[50px] rtl:pl-[50px];
+}
+
+.button-group-wrap{
+  @apply flex justify-end items-center mt-8;
+}

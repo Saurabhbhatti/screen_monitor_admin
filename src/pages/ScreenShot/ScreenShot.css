@@ -1,0 +1,374 @@
+.main-ss-container {
+  @apply flex items-center justify-between flex-wrap gap-4;
+}
+
+.font-div {
+  @apply flex items-center justify-end text-black mb-5;
+}
+
+.filter-lable {
+  @apply border-r border-gray-500 h-[55px] mx-5;
+}
+
+.flatpickr {
+  @apply w-auto ml-2 py-1.5;
+  margin-top: 0;
+}
+
+.form-input-date {
+  @apply form-input w-auto ml-2 py-1.5;
+}
+
+.time {
+  @apply text-lg mb-10;
+}
+
+.img-layout {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  margin-top: 8px;
+  margin-bottom: 40px;
+}
+
+.relative-img {
+  @apply relative w-64 h-48 mb-5 shadow-xl;
+}
+
+.img-rounded {
+  @apply rounded-md w-full h-full object-cover;
+}
+
+.overlay {
+  @apply absolute top-0 left-0 right-0 bg-gray-400 p-2 flex justify-between items-center;
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+}
+
+.transition-ss {
+  @apply fixed inset-0 bg-[black]/60 z-[999] overflow-y-auto;
+}
+
+.sub-ss-transition {
+  @apply flex items-center justify-center min-h-screen px-4;
+}
+
+.dialog-data {
+  @apply border-0 p-0 rounded-lg overflow-hidden w-full max-w-3xl my-8 text-black dark:text-white-dark;
+}
+
+.div-dialog {
+  @apply flex bg-[#fbfbfb] dark:bg-[#121c2c] items-center justify-between px-5 py-3;
+}
+
+.modal-btn {
+  @apply text-white-dark hover:text-dark;
+}
+
+.button-icon {
+  @apply w-6 h-6;
+}
+
+.container-styles {
+  @apply container mx-auto p-1;
+}
+
+.tab-panels {
+  @apply overflow-y-auto p-0.5;
+}
+
+.tab-list-container {
+  @apply sticky top-0 bg-white z-10 font-extrabold;
+}
+
+.sub-tab {
+  @apply flex items-center border-b;
+}
+
+.tab-list {
+  @apply flex flex-grow;
+}
+
+.tab-item {
+  @apply px-4 py-2 border-b-2;
+}
+
+.tab-item-selected {
+  @apply border-blue-500;
+}
+
+.tab-item-unselected {
+  @apply border-transparent;
+}
+
+.tab-div {
+  @apply flex items-center justify-between p-2;
+}
+
+.dailog-info {
+  @apply flex items-center justify-between p-2 gap-3;
+}
+
+.tab-ss-lable {
+  @apply text-base font-bold mt-2;
+}
+
+.card-styles {
+  @apply overflow-y-auto mt-1 justify-center sm:mr-0 lg:mr-1;
+}
+
+.card-content {
+  @apply m-2 flex gap-6 min-h-[40px];
+}
+
+.card-column {
+  @apply sm:text-sm lg:text-lg font-bold;
+}
+
+.card-divider {
+  @apply border-r border-gray-500 h-[55px] mx-8;
+}
+
+.percentage {
+  @apply sm:text-sm lg:text-lg text-center ml-5 font-bold;
+}
+
+.list-container {
+  @apply border-r border-gray-500 h-[55px] mx-8;
+}
+
+.image-selected {
+  @apply w-full h-auto object-cover mt-3 cursor-pointer;
+}
+
+.activity-tab {
+  @apply mt-5 p-0 border-0 overflow-hidden;
+}
+
+.details-tab {
+  @apply mt-5 p-4 bg-gray-300;
+}
+
+.detail-content {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+}
+
+.table-head {
+  @apply bg-gray-300 font-extrabold;
+}
+
+.table-body-row {
+  @apply whitespace-nowrap;
+}
+
+.table-body-cell {
+  @apply text-lg font-medium;
+}
+
+.detail-activity-styling {
+  @apply whitespace-nowrap text-xs;
+}
+
+.computer-details-card {
+  @apply mt-5 p-4 bg-gray-300;
+}
+
+.computer-details-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+}
+
+.computer-details-label {
+  @apply text-lg font-medium;
+}
+
+.screenShort-select-user {
+  @apply flex items-center gap-2;
+  ;
+}
+
+.screen-short-button {
+  width: 75%;
+}
+
+.screenShort-select-main {
+  @apply flex items-center justify-center;
+}
+
+.screnshort-select-main {
+  @apply flex items-center justify-center;
+}
+
+.screen-short-select-project {
+  @apply w-48 ml-2;
+}
+
+.progressbar-wrap {
+  @apply w-full bg-gradient-to-br from-[#fdfdfd] to-[#fdfdfd] rounded-lg overflow-hidden mt-0.5 flex items-center shadow-md border border-[#cfd8dc] transition-all duration-300 ease-in-out relative h-[8%];
+}
+
+.progressbar-wrap::before {
+  @apply absolute inset-0 bg-gradient-to-br from-[#f5f5f5] to-[#e0e0e0] z-[-1];
+}
+
+.progress-sub-wrap {
+  @apply w-full h-[20px] mr-2.5 relative;
+}
+
+.progress-line {
+  height: 100%;
+  background-color: #4caf50;
+  width: 0;
+  transition: width 0.3s ease;
+  border-radius: 0.5rem;
+}
+
+.centered-container {
+  @apply flex justify-center items-center;
+}
+
+.screenShort-select-user-sub {
+  @apply w-48 ml-2;
+}
+
+.screnshort-select-data {
+  @apply flex justify-center items-center;
+}
+
+.form-input {
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 320px) {
+  .screenShort-select-main {
+    @apply w-full;
+    display: contents !important;
+  }
+
+  .screenShort-select-main-sub {
+    @apply w-[17rem];
+  }
+
+  .screen-short-select-project {
+    @apply w-[16rem] !important;
+  }
+
+  .flatpickr {
+    width: 16rem !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .screenShort-select-user-sub {
+    @apply w-[9rem];
+  }
+
+  .relative-img {
+    @apply w-[14rem];
+  }
+
+  .img-layout {
+    @apply gap-8;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .screenShort-select-main {
+    @apply w-full;
+  }
+
+  .screenShort-select-main-sub {
+    @apply w-[10rem];
+  }
+
+  .screen-short-select-project {
+    @apply w-[9rem];
+  }
+
+  .flatpickr {
+    @apply w-[10rem] pl-2 pr-2;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .img-layout {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .font-div {
+    @apply w-full contents;
+  }
+
+  .screenShort-select-main {
+    @apply w-full;
+  }
+
+  .screenShort-select-main-sub {
+    @apply w-[10rem];
+  }
+
+  .screen-short-select-project {
+    @apply w-[9rem];
+  }
+
+  .flatpickr {
+    @apply w-[12rem];
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .img-layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .img-layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .flatpickr {
+    @apply w-[95%];
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .flatpickr {
+    @apply w-[95%];
+  }
+
+  .font-div {
+    @apply w-full contents;
+  }
+
+  .screenShort-select-main {
+    @apply w-full flex justify-start;
+  }
+
+  .screenShort-select-main-sub {
+    @apply w-[10rem];
+  }
+
+  .screen-short-select-project {
+    @apply w-[9rem];
+  }
+
+  .screen-short-button {
+    @apply w-[38%];
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .img-layout {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .screen-short-button {
+    @apply w-[56%];
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .img-layout {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

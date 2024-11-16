@@ -1,0 +1,169 @@
+.flex-container {
+    @apply flex items-center justify-between flex-wrap gap-4;
+  }
+  
+  .heading {
+    @apply text-xl;
+  }
+  
+  .flex-inner-container {
+    @apply flex sm:flex-row flex-col sm:items-center sm:gap-3 gap-4 w-full sm:w-auto;
+  }
+  
+  .search-container {
+    @apply flex gap-3;
+  }
+  
+  .search-wrapper {
+    @apply relative;
+  }
+  
+  .button-primary {
+    @apply border-primary bg-primary text-white shadow-primary/60 relative flex items-center justify-center rounded-md border px-5 py-2 text-sm font-semibold shadow-[0_10px_20px_-10px] outline-none transition duration-300;
+  }
+  
+  .icon-spacing {
+    @apply ltr:mr-2 rtl:ml-2;
+  }
+  
+  .company-table{
+    @apply mt-5 p-0 border-0 overflow-hidden flex flex-col
+  }
+
+.main-table-container {
+    @apply  p-0 border-0 overflow-hidden flex flex-col;
+  }
+  
+  .table-responsive {
+    @apply w-full;
+  }
+  
+  .table-header {
+    @apply bg-gray-300 font-extrabold;
+  }
+  
+  .loading-container {
+    @apply flex justify-center items-center w-full h-32;
+  }
+  
+  .company-name-container {
+    @apply flex items-center w-max;
+  }
+  
+  
+  .action-buttons-container {
+    @apply flex gap-4 items-center justify-center;
+  }
+  
+  
+  .pagination-container {
+    @apply flex justify-end;
+  }
+  
+  .pagelist-data {
+    @apply inline-flex items-center space-x-1 rtl:space-x-reverse mb-4;
+  }
+  
+  .pagination-data {
+    @apply flex justify-center font-semibold p-2 rounded-full transition;
+  }
+  
+  .pagination-button-disabled {
+    @apply bg-gray-400 text-white cursor-not-allowed;
+  }
+  
+  .pagination-button-active {
+    @apply bg-primary text-white;
+  }
+  
+  .pagination-button-inactive {
+    @apply bg-white-light text-dark hover:text-white hover:bg-primary;
+  }
+  
+  .dark-mode {
+    @apply dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary;
+  }
+  
+  .icon {
+    @apply w-5 h-5;
+  }
+  
+  .icon-rotate-90 {
+    @apply rotate-90;
+  }
+  
+  .icon-negative-rotate-90 {
+    @apply -rotate-90;
+  }
+  
+  .iconedit {
+    @apply w-5 h-5 text-warning
+  }
+
+  .pageIcon {
+    @apply w-5 h-5 rotate-90 rtl:rotate-90
+  }
+  .pageIconRight{
+  @apply w-5 h-5 -rotate-90 rtl:rotate-90
+  }
+
+  .page-number{
+    @apply flex justify-center font-semibold px-3.5 py-2 rounded-full 
+  }
+
+ .modal-main {
+    @apply relative z-[51];
+  }
+
+.modal-transition {
+    @apply fixed inset-0 bg-[black]/60;
+  }
+
+  .dialog {
+    @apply fixed inset-0 overflow-y-auto;
+  }
+
+  .sub-dialog {
+    @apply flex min-h-full items-center justify-center px-4 py-8;
+  }
+  
+  .dialog-panel {
+    @apply my-8 w-full max-w-5xl rounded-lg border-0 p-0 text-black dark:text-white overflow-hidden;
+  }
+  
+  .iconX{
+    @apply absolute top-4 right-4 text-gray-400 hover:text-gray-800 dark:hover:text-gray-600 outline-none;
+  }
+
+  .edit-add-company {
+    @apply text-lg font-medium bg-[#fbfbfb] dark:bg-[#121c2c] pl-5 pr-[50px] py-3;
+  }
+
+  .company-lable {
+    @apply text-lg font-semibold dark:text-white-light;
+  }
+
+  .company-form {
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5 mt-3;
+  }
+
+  .hr{
+    @apply mb-3 border-2
+  }
+
+.admin-detail{
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5 mt-4
+}
+
+.btn-section {
+    @apply flex justify-end items-center mt-8;
+  }
+
+  .cancel {
+    @apply relative flex items-center justify-center rounded-md border px-5 py-2 text-sm outline-none transition duration-300 hover:shadow-none;
+  }
+  
+  .save {
+    @apply relative flex items-center justify-center rounded-md border px-5 py-2 text-sm font-semibold shadow-[0_10px_20px_-10px] outline-none transition duration-300 hover:shadow-none border-primary bg-primary text-white shadow-primary/60 ml-4;
+  }
+ 

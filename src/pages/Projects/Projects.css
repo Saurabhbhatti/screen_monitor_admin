@@ -1,0 +1,27 @@
+.flex-container {
+  @apply flex items-center justify-between flex-wrap gap-4;
+}
+
+.search-container {
+  @apply flex sm:flex-row flex-col sm:items-center sm:gap-3 gap-4 w-full sm:w-auto;
+}
+
+.filter-label {
+  @apply text-black  text-xl mr-1;
+}
+/* 
+.search-input {
+  @apply w-48;
+} */
+
+.project-button {
+  @apply border-primary bg-primary text-white shadow-primary/60 relative flex items-center justify-center rounded-md border px-5 py-2 text-sm font-semibold shadow-[0_10px_20px_-10px] outline-none transition duration-300;
+}
+
+.icon-user-plus {
+  @apply ltr:mr-2 rtl:ml-2;
+}
+
+.table-containt {
+  @apply mt-5  p-0 border-0 overflow-hidden flex flex-col;
+}

@@ -1,0 +1,197 @@
+.report-container {
+  @apply flex flex-col gap-4;
+}
+
+.report-header {
+  @apply flex items-center justify-between;
+}
+
+.controls {
+  @apply flex flex-col md:flex-row items-start md:items-center justify-between gap-4;
+}
+
+.export-btn {
+  @apply bg-primary text-white shadow-primary/60 relative flex items-center justify-center rounded-md border border-transparent px-5 py-2 gap-2 text-sm font-semibold shadow-[0_10px_20px_-10px] outline-none transition duration-300;
+}
+
+.dropdown-item {
+  @apply w-[100px] text-[#333] transition-colors duration-300 ease-in-out;
+}
+
+ul {
+  @apply shadow-md rounded-[8px] p-[5px] m-0 bg-white;
+}
+
+.loader-container {
+  @apply flex items-center justify-center h-screen bg-gray-100;
+}
+
+.loader {
+  @apply w-12 h-12 border-4 border-gray-200 border-t-blue-500 rounded-full animate-spin;
+}
+
+.dsr-date-picker {
+  @apply border p-2 w-56 rounded-md mt-0;
+}
+
+.format-select {
+  @apply flex gap-4;
+}
+
+input,
+.format-select select {
+  @apply p-1 mt-1;
+}
+
+.report-cards {
+  @apply flex flex-wrap gap-10 md:gap-8;
+}
+
+.dsr-card {
+  @apply bg-white rounded-lg shadow-lg p-6 sm:w-[280px] lg:w-[30%] md:w-[330px] w-full transition-transform duration-300 ease-in-out relative;
+  @apply border border-gray-300;
+  @apply h-auto;
+  @apply max-h-[400px];
+  overflow: hidden;
+}
+
+.dsr-card.expanded {
+  @apply z-10 max-h-[90vh] overflow-y-auto p-8 shadow-2xl;
+}
+
+.card-header {
+  @apply sticky top-0;
+}
+
+.card-header .day {
+  @apply font-medium;
+}
+
+.dsr-card .card-body {
+  @apply text-sm text-gray-600;
+}
+
+.dsr-card .dsr-task {
+  @apply text-gray-800 text-xs;
+}
+
+.dsr-card .task-list-container {
+  @apply overflow-hidden;
+  max-height: 100px;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.dsr-card.expanded .task-list-container {
+  max-height: none;
+}
+
+.dsr-card .toggle-btn {
+  @apply cursor-pointer text-sm bottom-2;
+}
+
+.card-header h3 {
+  @apply font-semibold text-lg;
+}
+
+.card-body {
+  @apply mb-4;
+  @apply text-sm text-gray-700;
+}
+
+.card-footer {
+  @apply border-t border-gray-300 pt-2 text-sm mb-2;
+}
+
+.task-content {
+  @apply h-[200px] overflow-y-auto;
+}
+
+.dsr-task {
+  @apply overflow-hidden transition-all duration-500 ease-in-out;
+}
+
+.dsr-task ul {
+  @apply pl-5 list-disc text-sm;
+}
+
+.dsr-task ul li {
+  @apply mb-2 pl-4 text-gray-700;
+}
+
+.dsr-task b {
+  @apply block mb-3 mt-3;
+}
+
+.toggle-btn {
+  @apply text-white border-none rounded cursor-pointer text-blue-600 text-sm bottom-2;
+}
+
+.date-day-block {
+  @apply flex justify-between items-center mb-2 pb-2 border-b border-black;
+}
+
+.date,
+.day {
+  @apply m-0 text-base;
+}
+
+.date {
+  @apply font-semibold text-lg;
+  color: #4361ee
+}
+
+.day {
+  @apply text-base;
+  color: #4361ee;
+}
+
+.dsr-date-picker {
+  @apply border p-2 w-56;
+}
+
+.download-btn {
+  @apply mt-4 px-4 py-2 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 transition-colors duration-200;
+}
+
+.back-btn {
+  @apply mt-4 px-4 py-2 bg-gray-300 text-gray-800 font-semibold rounded hover:bg-gray-400 transition-colors duration-200;
+}
+
+.download-btn:enabled {
+  background-color: rgba(67, 97, 238, var(--tw-bg-opacity));
+}
+
+.download-btn:disabled {
+  @apply bg-gray-400 cursor-not-allowed opacity-60;
+}
+
+.text-centered {
+  @apply flex justify-center items-center text-center h-full;
+}
+
+.dsr-container {
+  @apply flex items-center justify-center pt-20;
+}
+
+.file-message {
+  @apply flex flex-col items-center justify-center p-5 bg-gray-200 border border-gray-300 rounded-lg shadow-lg max-w-md text-center;
+}
+
+.file-message p {
+  @apply text-lg text-gray-800 mb-4;
+}
+
+.dsr-header-main {
+  @apply flex justify-end;
+}
+
+@media only screen and (max-width: 425px) {
+  .dsr-header-main {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .controls {
+    width: 100%;
+  }
+}

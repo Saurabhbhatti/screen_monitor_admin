@@ -1,0 +1,38 @@
+.main-wrap-styling {
+  @apply bg-white shadow rounded-lg overflow-hidden;
+  width: 100%;
+}
+
+.table-container {
+  @apply relative;
+  max-height: 400px; /* Set max height for the table container */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.table-head {
+  @apply sticky top-0 bg-white;
+  z-index: 10;
+}
+
+.table-body-wrap {
+  @apply overflow-y-auto; /* Enable scrolling for table body */
+  max-height: 350px; /* Adjust for header height */
+}
+
+.table-row-styling {
+  @apply border-b;
+}
+
+.name-column-styles,
+.member-column-styles,
+.working-hr-styles {
+  @apply px-4 py-2;
+}
+
+.member-tooltip {
+  @apply flex items-center justify-center w-8 h-8 bg-gray-300 rounded-full text-white;
+}
+
+.member-tiling {
+  @apply flex items-center justify-center w-8 h-8 bg-gray-500 rounded-full text-white;
+}

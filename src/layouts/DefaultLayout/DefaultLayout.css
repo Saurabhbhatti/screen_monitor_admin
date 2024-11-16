@@ -1,0 +1,35 @@
+.relative-container {
+  @apply relative;
+}
+
+.sidebar-overlay {
+  @apply fixed inset-0 bg-black/60 z-50 lg:hidden;
+}
+
+.screen-loader-container {
+  @apply fixed inset-0 bg-[#fafafa] dark:bg-[#060818] z-[60] grid place-content-center;
+}
+
+.back-to-top-button {
+  @apply fixed bottom-6 ltr:right-6 rtl:left-6 z-50;
+}
+
+.back-to-top {
+  @apply rounded-full p-2 animate-pulse bg-[#fafafa] dark:bg-[#060818] dark:hover:bg-primary;
+}
+
+.back-to-top-icon {
+  @apply h-4 w-4;
+}
+
+.main-container {
+  @apply text-black dark:text-white-dark min-h-screen;
+}
+
+.main-content {
+  @apply flex flex-col min-h-screen;
+}
+
+.content-area {
+  @apply p-6 bg-gray-50;
+}

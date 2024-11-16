@@ -1,0 +1,11 @@
+.switch-lable{
+  @apply w-12 h-6 relative
+}
+
+.switch-input {
+  @apply  absolute w-full h-full opacity-0 z-10 cursor-pointer 
+}
+
+.switch-toggle{
+  @apply bg-[#ebedf2] dark:bg-dark block h-full rounded-full before:absolute before:left-1 before:bg-white dark:before:bg-white-dark dark:peer-checked:before:bg-white before:bottom-1 before:w-4 before:h-4 before:rounded-full peer-checked:before:left-7 peer-checked:bg-green-500 before:transition-all before:duration-300
+}

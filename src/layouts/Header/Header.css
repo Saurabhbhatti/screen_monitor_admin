@@ -1,0 +1,66 @@
+.header-container {
+  @apply relative bg-white flex w-full items-center px-5 py-2.5 dark:bg-black ;
+}
+.horizontal-logo {
+  @apply flex lg:hidden justify-between items-center ltr:mr-2 rtl:ml-2 ;
+}
+
+.collapse-icon {
+  @apply flex-none dark:text-[#d0d2d6] hover:text-primary dark:hover:text-primary flex lg:hidden ltr:ml-2 rtl:mr-2 p-2 rounded-full bg-white-light/40 dark:bg-dark/40 hover:bg-white-light/90 dark:hover:bg-dark/60;
+}
+
+.dropdown-menu {
+  @apply sm:flex-1 ltr:sm:ml-0 ltr:ml-auto sm:rtl:mr-0 rtl:mr-auto flex items-center space-x-1.5 lg:space-x-2 rtl:space-x-reverse dark:text-[#d0d2d6];
+}
+
+.header-subcontain {
+  @apply sm:ltr:mr-auto sm:rtl:ml-auto; 
+}
+
+.profile-image {
+  @apply w-9 h-9 rounded-full object-cover saturate-50;
+}
+
+.user-container {
+  @apply text-dark dark:text-white-dark w-[230px] font-semibold dark:text-white-light/90;
+}
+
+.user-popup {
+  @apply flex items-center px-4 py-4 no-underline;
+}
+
+.user-image {
+  @apply w-10 h-10 object-cover;
+}
+
+.user-name {
+  @apply ltr:pl-4 rtl:pr-4 truncate;
+}
+
+.icon-user {
+  @apply w-4.5 h-4.5 ltr:mr-2 rtl:ml-2 shrink-0; 
+}
+
+.signout {
+  @apply  border-t border-white-light dark:border-white-light/10;
+}
+
+.signout-icon {
+  @apply w-4.5 h-4.5 ltr:mr-2 rtl:ml-2 rotate-90 shrink-0; 
+}
+
+.profile{
+  @apply dark:hover:text-white no-underline  hover:no-underline
+}
+
+.change-password{
+@apply dark:hover:text-white no-underline  hover:no-underline
+}
+
+.logout{
+  @apply text-danger !py-3 no-underline  hover:no-underline
+}
+
+.list-hider{
+  @apply list-none
+}

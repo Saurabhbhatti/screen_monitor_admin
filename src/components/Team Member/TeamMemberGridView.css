@@ -1,0 +1,55 @@
+.main-div {
+  @apply grid 2xl:grid-cols-4 xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 mt-2 w-full;
+}
+
+.upper-div {
+  @apply bg-white dark:bg-[#1c232f] rounded-md overflow-hidden text-center shadow relative;
+}
+
+.sub-div {
+  @apply bg-white dark:bg-[#1c232f] rounded-md overflow-hidden text-center shadow relative;
+}
+
+.card-div {
+  @apply px-6 pb-20 -mt-7 relative;
+}
+
+.card-sub-div {
+  @apply shadow-md bg-white dark:bg-gray-900 rounded-md px-2 py-3;
+}
+
+.main-info-div {
+  @apply mt-4 grid grid-cols-1 gap-2 ltr:text-left rtl:text-right;
+}
+
+.user-info-div {
+  @apply flex items-center;
+}
+
+.key-info {
+  @apply flex-none ltr:mr-2 rtl:ml-2;
+}
+
+.value-info {
+  @apply truncate text-white-dark;
+}
+
+.button-group {
+  @apply flex justify-center items-center mt-6  absolute bottom-0 w-full p-6 gap-6;
+}
+
+.btn-lg {
+  @apply text-sm py-2 px-4; /* Adjust the size as needed */
+}
+
+.bg-img-contain {
+  @apply object-contain w-4/5 max-h-36 mx-auto;
+}
+
+.image-container {
+  @apply bg-white/40 rounded-t-md bg-center bg-cover p-3 pb-0;
+  background-image: url('/assets/images/notification-bg.png');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.modal-overlay {
+  @apply fixed inset-0 z-50 grid place-items-center bg-black bg-opacity-60 backdrop-blur-sm transition-opacity duration-300;
+}
+
+.button-container{
+  @apply flex justify-between;
+}
+
+.modal-content {
+  @apply relative w-2/5 min-w-[30%] max-w-[30%] rounded-lg bg-white shadow-2xl p-2;
+}
+
+.modal-header {
+  @apply flex items-center justify-between text-2xl font-semibold text-blue-gray-900;
+}
+
+.modal-close-button {
+  @apply hover:bg-red-500/10 rounded-lg;
+}
+
+.modal-body {
+  @apply text-base text-blue-gray-500 ml-4;
+}
+
+.modal-footer {
+  @apply flex justify-end p-3;
+}
+
+.btn-header {
+  @apply flex justify-end;
+}
+
+.btn-cancel {
+  @apply px-4 py-2 text-xs font-bold text-red-500 uppercase mr-2;
+}
+
+.btn-confirm {
+  @apply px-6 py-3 text-xs font-bold text-white uppercase bg-gradient-to-tr from-green-600 to-green-400 rounded-lg shadow-md hover:shadow-lg active:opacity-[0.85];
+}

@@ -1,0 +1,8 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-date-picker {
+  @apply form-input w-auto;
+}

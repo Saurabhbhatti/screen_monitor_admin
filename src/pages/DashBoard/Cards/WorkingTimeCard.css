@@ -1,0 +1,43 @@
+.main-heading-custom-wrap {
+  @apply flex items-center justify-between dark:text-white-light mb-4;
+}
+
+.heading-styling {
+  @apply font-semibold text-lg;
+}
+
+.spn-styling {
+  @apply block text-white-dark text-sm font-normal;
+}
+
+.bars-main-wraps {
+  @apply flex justify-between items-center mx-auto mt-4 gap-2;
+}
+
+.bars-sub-wrap {
+  @apply flex flex-col items-center;
+}
+
+.bar-circular-wrape {
+  @apply relative w-12 h-12 sm:w-14 sm:h-14;
+}
+
+.bar-circular-value {
+  @apply absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2;
+}
+
+.meeting-indicator {
+  @apply text-center text-lg font-bold text-blue-600 dark:text-blue-500;
+}
+
+.work-indicator {
+  @apply text-center text-lg font-bold text-green-600 dark:text-green-500;
+}
+
+.others-indicator {
+  @apply text-center text-lg font-bold text-red-600 dark:text-red-500;
+}
+
+.bar-bottom-labeling {
+  @apply mt-2 text-center text-sm dark:text-white;
+}

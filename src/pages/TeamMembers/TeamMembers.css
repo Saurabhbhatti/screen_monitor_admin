@@ -1,0 +1,91 @@
+.panel-header {
+  @apply p-4 flex items-center text-black whitespace-nowrap;
+}
+
+/* .header-content {
+  @apply flex items-center space-x-4 flex-grow;
+} */
+
+.header-title {
+  @apply font-bold mr-1;
+}
+
+.form-input {
+  @apply ltr:pl-9 rtl:pr-9 ltr:sm:pr-4 rtl:sm:pl-4 ltr:pr-9 rtl:pl-9 sm:bg-transparent bg-gray-100 placeholder:tracking-widest rounded-xl;
+}
+
+.search-button {
+  @apply absolute w-5 h-9 ml-2 inset-0 ltr:right-auto rtl:left-auto appearance-none peer-focus:text-gray-500;
+}
+
+.clear-button {
+  @apply hover:opacity-80 sm:hidden block absolute top-1/2 -translate-y-1/2 ltr:right-2 rtl:left-2;
+}
+
+.panel-title {
+  @apply font-semibold text-lg dark:text-white-light mb-5;
+}
+
+.datatable {
+  @apply whitespace-nowrap;
+}
+
+.custom-switch {
+  @apply w-12 h-6 relative;
+}
+
+.custom-switch-checkbox {
+  @apply absolute w-full h-full opacity-0 z-10 cursor-pointer;
+}
+
+.custom-switch-span {
+  @apply bg-[#ebedf2] dark:bg-dark block h-full rounded-full before:absolute before:left-1 before:bg-white dark:before:bg-white-dark dark:peer-checked:before:bg-white before:bottom-1 before:w-4 before:h-4 before:rounded-full peer-checked:before:left-7 peer-checked:bg-primary before:transition-all before:duration-300;
+}
+
+.action-icons {
+  @apply flex items-center;
+}
+
+.edit-icon {
+  @apply ltr:mr-2 rtl:ml-2;
+}
+
+.delete-icon {
+  @apply cursor-pointer;
+}
+
+.add-member-button {
+  @apply ml-auto bg-blue-500 text-white px-4 py-2 rounded;
+}
+
+.panel-heading { 
+  @apply flex items-center justify-between flex-wrap gap-4;
+}
+
+.inside-div-panel { 
+  @apply flex sm:flex-row flex-col sm:items-center sm:gap-3 gap-4 w-full sm:w-auto;
+}
+
+.add-member-icon { 
+  @apply ltr:mr-2 rtl:ml-2;
+}
+
+.main-div{
+  @apply flex flex-col;
+}
+
+.sub-div{
+  @apply flex items-center justify-between flex-wrap gap-4;
+}
+
+.table-handlers{
+  @apply flex sm:flex-row flex-col sm:items-center sm:gap-3 gap-4 w-full sm:w-auto;
+}
+
+.userplus-icon{
+  @apply ltr:mr-2 rtl:ml-2;
+}
+
+.adduser-button-style{
+  @apply border-primary bg-primary text-white shadow-primary/60 relative flex items-center justify-center rounded-md border px-5 py-2 text-sm font-semibold shadow-[0_10px_20px_-10px] outline-none transition duration-300
+}

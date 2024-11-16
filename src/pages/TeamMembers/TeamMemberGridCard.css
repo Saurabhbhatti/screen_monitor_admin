@@ -1,0 +1,91 @@
+.main-wrapper {
+  @apply grid 2xl:grid-cols-4 xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 mt-5 w-full;
+}
+
+.sub-wrapper {
+  @apply bg-white dark:bg-[#1c232f] rounded-md overflow-hidden text-center shadow relative;
+}
+
+.image-wrapper {
+  @apply bg-white dark:bg-[#1c232f] rounded-md overflow-hidden text-center shadow relative;
+}
+
+.content-wrapper {
+  @apply px-6 pb-24 -mt-10 relative;
+}
+
+.content-sub-wrapper {
+  @apply shadow-md bg-white dark:bg-gray-900 rounded-md px-2 py-4;
+}
+
+.buttons-group {
+  @apply flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 gap-1
+}
+
+.add-project-button {
+  @apply flex items-center justify-center w-9 h-9 border-2 border-dashed border-gray-300 rounded-full hover:border-gray-400;
+}
+
+.plus-icon-style {
+  @apply text-gray-400 text-xl;
+}
+
+.tooltip-main-wrap {
+  @apply flex flex-wrap -space-x-1;
+}
+
+.details-wrap {
+  @apply mt-6 grid grid-cols-1 gap-4 ltr:text-left rtl:text-right;
+}
+
+.sub-info-wrap {
+  @apply flex items-center;
+}
+
+.title-wrap {
+  @apply flex-none ltr:mr-2 rtl:ml-2;
+}
+
+.value-wrap {
+  @apply truncate text-white-dark;
+}
+
+.phone-title-wrap {
+  @apply flex-none ltr:mr-2 rtl:ml-2;
+}
+
+.buttongroup-wrap {
+  @apply mt-6 flex gap-4 absolute bottom-0 w-full ltr:left-0 rtl:right-0 p-6;
+}
+
+.user-edit-button {
+  @apply relative flex items-center justify-center rounded-md border px-5 py-2 text-sm font-semibold shadow-[0_10px_20px_-10px] outline-none transition duration-300 border-primary text-primary shadow-none hover:bg-primary hover:text-white w-1/2;
+}
+
+.user-delete-button {
+  @apply relative flex items-center justify-center rounded-md border px-5 py-2 text-sm  outline-none transition duration-300 hover:shadow-none w-1/2 hover:bg-red-700 hover:text-white w-1/2;
+}
+
+.pagination-wrap {
+  @apply mt-5 flex justify-end;
+}
+
+.sub-paginate-wrap {
+  @apply inline-flex items-center space-x-1 rtl:space-x-reverse mb-4;
+}
+
+.caret-down-icon {
+  @apply w-5 h-5 -rotate-90 rtl:rotate-90;
+}
+
+.main-tooltip-wrap{
+@apply flex -space-x-1;
+}
+
+.name-tooltip-styling{
+  @apply w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center border-2 border-white;
+}
+
+.length-tooltip-styling{
+  @apply w-10 h-10 rounded-full bg-gray-600 text-white border-2 border-white flex items-center justify-center;
+}

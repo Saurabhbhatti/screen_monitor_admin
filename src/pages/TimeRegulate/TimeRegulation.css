@@ -1,0 +1,52 @@
+.main-wrap {
+  @apply flex justify-center items-center;
+}
+
+.page-title {
+  @apply text-xl;
+}
+
+.loading-message {
+  @apply text-base text-gray-600 text-center my-5;
+}
+
+.error-message {
+  @apply text-base text-red-500 text-center my-5;
+}
+
+.no-data-message {
+  @apply text-base text-gray-400 text-center my-5;
+}
+.time-regulation-main {
+  @apply mb-2;
+}
+
+.time-display {
+  @apply flex mt-8 gap-8;
+}
+
+.time-regulation-total-hours {
+  @apply ml-32;
+}
+
+@media only screen and (max-width: 768px) {
+  .time-display {
+    @apply gap-0;
+  }
+  .time-regulation-total-hours {
+    @apply ml-[7rem];
+  }
+}
+@media only screen and (max-width: 425px) {
+  .select-project {
+    @apply w-[90%];
+  }
+  .time-regulation-total-hours {
+    @apply ml-[5rem];
+  }
+}
+@media only screen and (max-width: 375px) {
+  .time-regulation-total-hours {
+    @apply ml-[3rem];
+  }
+}

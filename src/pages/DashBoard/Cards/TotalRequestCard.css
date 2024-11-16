@@ -1,0 +1,43 @@
+.total-req-main-wrap {
+  @apply flex items-center justify-between dark:text-white-light mb-3;
+}
+
+.total-req-header {
+  @apply font-semibold text-lg;
+}
+
+.req-spn-value {
+  @apply block text-white-dark text-sm font-normal;
+}
+
+.req-bar-main-wrapes {
+  @apply flex justify-between items-center mx-auto gap-2;
+}
+
+.req-bar-sub-wrapes {
+  @apply flex flex-col items-center;
+}
+
+.req-bar-custom-styles {
+  @apply relative w-12 h-12 sm:w-14 sm:h-14;
+}
+
+.req-bar-val-wrap {
+  @apply absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2;
+}
+
+.regulate-bar-val-wrap {
+  @apply text-center text-lg font-bold text-blue-600 dark:text-blue-500;
+}
+
+.compoff-bar-val-wrap {
+  @apply text-center text-lg font-bold text-green-600 dark:text-green-500;
+}
+
+.leave-bar-val-wrapes {
+  @apply text-center text-lg font-bold text-red-600 dark:text-red-500;
+}
+
+.leaves-bar-bottom-heading {
+  @apply mt-2 text-center text-sm dark:text-white;
+}

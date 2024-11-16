@@ -1,0 +1,36 @@
+.tableContainer {
+  @apply overflow-auto;
+  max-height: 250px;
+}
+
+.table {
+  @apply min-w-full divide-y divide-gray-200;
+}
+
+.tableHeader {
+  @apply bg-gray-50;
+}
+
+.tableHeaderCell {
+  @apply px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider;
+}
+
+.tableBody {
+  @apply bg-white divide-y divide-gray-200;
+}
+
+.employeeCell {
+  @apply px-6 py-4 whitespace-nowrap flex items-center;
+}
+
+.avatar {
+  @apply h-10 w-10 rounded-full mr-3;
+}
+
+.otherCells {
+  @apply px-6 py-4 whitespace-nowrap;
+}
+
+.leaveRecordToggelMainSwitchSpam {
+  @apply mb-2;
+}

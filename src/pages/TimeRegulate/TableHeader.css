@@ -1,0 +1,97 @@
+.table-header-main {
+  @apply flex flex-col mb-4;
+}
+
+.table-header-h2 {
+  @apply text-2xl font-semibold my-3;
+}
+
+.table-header-main-sub {
+  @apply flex items-center justify-between;
+}
+
+.table-header-main-detail {
+  @apply flex items-center space-x-4 ml-auto;
+}
+
+.table-header-span {
+  @apply flex items-center space-x-2;
+}
+
+.table-header-time-activity-date-picker {
+  @apply border p-2 w-56 rounded-md mt-0;
+}
+
+.table-header-plus-button {
+  @apply w-8 h-8 border-2 border-gray-700 rounded-full hover:border-gray-400;
+}
+
+.switch-lable {
+  margin: 0;
+}
+
+.table-header-main-detail-sub {
+  @apply flex items-center gap-4;
+}
+
+.table-header-data-flatpickr {
+  @apply flex items-center gap-4;
+}
+
+.table-header-span-selecter {
+  @apply flex items-center gap-4;
+}
+
+@media only screen and (max-width: 768px) {
+  .table-header-main-detail {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .table-header-main-detail {
+    @apply space-x-0 w-full flex gap-4 flex-col;
+  }
+
+  .table-header-main-detail-sub {
+    @apply w-full flex flex-col items-start;
+  }
+
+  .table-header-span-selecter {
+    @apply w-full
+  }
+
+  .table-header-data-flatpickr {
+    @apply w-full
+  }
+
+  .table-header-time-activity-date-picker {
+    @apply w-full
+  }
+
+  .table-header-span {
+    @apply w-[30%];
+  }
+
+  .table-header-selecter {
+    @apply w-[70%];
+  }
+
+  .table-header-plus-button {
+    @apply w-[2.3rem];
+  }
+
+  .select-format {
+    @apply w-full;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .table-header-span {
+    @apply w-[40%];
+  }
+
+  .table-header-selecter {
+    @apply w-[60%];
+  }
+}

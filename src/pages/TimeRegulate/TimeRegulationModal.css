@@ -1,0 +1,94 @@
+.table-regulation-h2-Flatpickr {
+  @apply flex flex-wrap gap-4;
+}
+.table-regulation-h2 {
+  @apply text-2xl text-[1.125];
+}
+.time-regulation-selecter-Flatpickr {
+  @apply flex flex-wrap gap-8 mb-4 space-x-0;
+}
+.time-regulation-user-selecter {
+  @apply flex flex-col items-start gap-2;
+}
+.label-header {
+  @apply block font-semibold text-lg;
+}
+.time-regulation-project-selector {
+  @apply flex flex-col items-start gap-2;
+}
+.select-project {
+  @apply w-48 ml-0;
+}
+
+.select-user {
+  @apply w-48 ml-0;
+}
+.date-picker-container-data {
+  @apply flex flex-col space-x-4;
+}
+.date-picker-label {
+  @apply block font-semibold text-lg mb-0;
+}
+.time-activity-date-picker-model {
+  @apply border p-2 rounded-md mt-0 mb-4 w-[12rem];
+  margin-left: 0 !important;
+}
+.time-display-div {
+  @apply flex mt-4 gap-4 flex-wrap;
+}
+.time-regulation-input {
+  @apply border rounded p-2 mt-1 w-[12rem];
+}
+.time-regulation-end-time {
+  @apply ml-4;
+}
+.description-container {
+  margin-top: 1rem;
+}
+.time-regulation-action-button {
+  @apply px-5 py-2 text-sm font-medium border rounded-md transition duration-300;
+}
+.action-button {
+  @apply flex justify-center ;
+}
+@media only screen and (max-width: 425px) {
+  .table-regulation-h2 {
+    @apply flex justify-center;
+  }
+  .time-regulation-selecter-Flatpickr {
+    @apply mb-8 mt-4;
+  }
+  .time-regulation-user-selecter {
+    @apply flex flex-row gap-[2.1rem];
+  }
+  .time-regulation-project-selector {
+    @apply flex flex-row gap-4;
+  }
+  .select-project {
+    @apply w-[14rem];
+  }
+  .select-user {
+    @apply w-[14rem];
+  }
+  .date-picker-container-data {
+    @apply flex flex-row gap-8;
+  }
+  .time-activity-date-picker-model {
+    @apply w-[14rem];
+  }
+  .time-regulation-end-time {
+    @apply flex ml-0 gap-4;
+  }
+  .time-regulation-start-time {
+    @apply flex gap-4;
+  }
+  .time-label {
+    @apply flex w-1/5;
+  }
+  .time-regulation-input {
+    @apply w-[14rem] h-[3rem] rounded-[7px];
+  }
+  .title-description {
+    @apply h-[3rem];
+  }
+}

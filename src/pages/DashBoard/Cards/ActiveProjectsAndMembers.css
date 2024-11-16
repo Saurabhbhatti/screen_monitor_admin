@@ -1,0 +1,39 @@
+.active-main-wrap {
+  @apply flex items-center justify-between dark:text-white-light mb-5;
+}
+
+.box-heding-wrap {
+  @apply font-semibold text-lg;
+}
+
+.project-user-main-wrap {
+  @apply flex justify-between items-center mx-auto mt-8 gap-2;
+}
+
+.project-user-bars-main-wrap {
+  @apply flex flex-col items-center;
+}
+
+.custom-project-user-bar {
+  @apply relative w-12 h-12 sm:w-14 sm:h-14;
+}
+
+.project-user-bars-val-wrap {
+  @apply absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2;
+}
+
+.time-regulate-val {
+  @apply text-center text-lg font-bold text-blue-600 dark:text-blue-500;
+}
+
+.compoff-bar-val {
+  @apply text-center text-lg font-bold text-green-600 dark:text-green-500;
+}
+
+.leave-bar-val-wrapes {
+  @apply text-center text-lg font-bold text-red-600 dark:text-red-500;
+}
+
+.project-user-bottom-heading {
+  @apply mt-2 text-center text-sm dark:text-white;
+}

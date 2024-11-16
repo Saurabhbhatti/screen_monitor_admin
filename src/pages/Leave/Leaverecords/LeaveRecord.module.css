@@ -1,0 +1,239 @@
+.table {
+  @apply min-w-full divide-y divide-gray-200 bg-gray-100 rounded-lg shadow-md overflow-x-auto;
+}
+.tableHeader {
+  @apply bg-gray-100 text-gray-700 !important;
+}
+.loading {
+  @apply flex justify-center items-center w-full h-32;
+}
+.tableHeaderCell {
+  @apply text-left text-sm font-semibold uppercase tracking-wider !important;
+  line-height: 2.5rem !important;
+  padding: 0.75rem !important;
+  border-bottom: 2px solid #e2e8f0;
+}
+.tableBody {
+  @apply divide-y divide-gray-200;
+}
+.employeeCell {
+  @apply flex items-center p-2 whitespace-nowrap text-sm border-r border-gray-200;
+}
+.leaveTypeCell {
+  @apply text-sm p-2 border-r border-gray-200;
+}
+.leaveTypeCellStatus {
+  @apply text-sm p-2 border-r border-gray-200;
+  display: flex !important;
+}
+.actionCell {
+  @apply p-2 whitespace-nowrap text-sm;
+}
+.avatar {
+  @apply h-10 w-10 rounded-full mr-3 border border-gray-300;
+}
+.dateColumn {
+  @apply p-2;
+}
+.status {
+  @apply text-sm font-medium rounded border;
+}
+
+.LeaveRecordStatusApproved {
+  @apply border-none text-green-500;
+}
+
+.LeaveRecordStatusPending {
+  @apply border-none text-yellow-800;
+}
+
+.LeaveRecordStatusNotApproved {
+  @apply border-none text-red-500;
+}
+.LeaveRecordStatusRejected {
+  @apply border-none text-blue-500;
+}
+.actionButton {
+  @apply flex items-center justify-center p-2 rounded-full hover:bg-gray-200 focus:outline-none;
+}
+.popupContainer {
+  @apply relative;
+}
+.leave-activity-input-container {
+  @apply flex items-center justify-end space-x-4;
+}
+.leaveRecordMain {
+  @apply space-y-8;
+}
+.leaveRecordContain {
+  @apply flex space-x-4 rounded-lg bg-gray-50;
+}
+.leaveRecordDetail {
+  @apply flex items-center justify-end w-full gap-8;
+}
+.leaveRecordToggelMain {
+  @apply flex items-center;
+}
+.leaveRecordToggelLabel {
+  @apply flex items-center cursor-pointer;
+}
+.leaveRecordToggelIsOn {
+  @apply block w-14 h-8 rounded-full;
+}
+.leaveRecordToggelIsOnSub {
+  @apply absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition-transform;
+}
+.leaveRecordToggelColor {
+  @apply bg-green-500;
+}
+.leaveRecordToggelColorSub {
+  @apply bg-gray-400;
+}
+.leaveRecordToggelTranslate {
+  @apply translate-x-6;
+}
+.leaveRecordToggelOnOff {
+  @apply ml-3 text-gray-700;
+}
+.leaveRecordToggelMainSwitch {
+  @apply flex justify-center items-center mt-2 gap-2;
+}
+.leaveRecordToggelMainSwitchSpam {
+  @apply mb-2;
+}
+.paginationContainer {
+  @apply flex justify-end p-4;
+}
+.listUlss {
+  @apply flex items-center space-x-2;
+  list-style-type: none;
+  margin: 0;
+}
+.Leavedeleteicon {
+  @apply text-black w-6 h-6 !important;
+}
+.paginationIconButton {
+  @apply flex justify-center font-semibold p-2 rounded-full transition-transform;
+}
+.paginationNumberButton {
+  @apply flex justify-center font-semibold p-2 rounded-full transition-transform;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+.paginationButtonDisabled {
+  @apply bg-gray-400 text-white cursor-not-allowed;
+}
+.paginationButtonEnabel {
+  @apply bg-white text-dark hover:text-white hover:bg-primary;
+}
+.paginationIconLeft {
+  @apply w-5 h-5 rotate-90 rtl:-rotate-90;
+}
+.paginationIconRight {
+  @apply w-5 h-5 -rotate-90 rtl:rotate-90;
+}
+.paginationButtonActive {
+  @apply bg-primary text-white;
+}
+.cancelButton {
+  @apply text-red-500 py-1 px-2 rounded-md ml-4 hover:bg-red-100 hover:text-red-700;
+}
+.buttonStatusDiv {
+  @apply flex gap-3 items-center;
+}
+.buttonApprove {
+  @apply text-green-800 hover:bg-green-800 hover:text-white;
+}
+.buttonReject {
+  @apply text-red-800 hover:bg-red-800 hover:text-white;
+}
+@media (max-width: 1024px) {
+  .table {
+    @apply overflow-y-auto;
+  }
+  .tableHeaderCell,
+  .leaveTypeCell,
+  .actionCell {
+    width: auto !important;
+    font-size: 0.875rem;
+  }
+  .dateColumn {
+    width: auto !important;
+  }
+  .employeeCell {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .avatar {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+  .status {
+    font-size: 0.75rem;
+    text-align: left;
+  }
+}
+@media (max-width: 640px) {
+  .tableHeaderCell,
+  .leaveTypeCell,
+  .actionCell {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+  }
+  .employeeCell {
+    padding: 0.5rem;
+  }
+  .dateColumn {
+    width: auto !important;
+  }
+}
+@media (max-width: 1024px) {
+  .leaveRecordContain {
+    @apply flex-col overflow-x-auto;
+  }
+  .leaveRecordDetail {
+    @apply flex-col gap-4;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .SearchSelect,
+  .time-activity-date-picker {
+    @apply w-full;
+  }
+}
+@media (max-width: 640px) {
+  .leaveRecordContain {
+    @apply p-2;
+  }
+  .leaveRecordDetail {
+    @apply flex-col gap-4;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .SearchSelect,
+  .time-activity-date-picker {
+    @apply w-full;
+  }
+  .leaveRecordToggelMainSwitchSpam {
+    @apply text-xs;
+  }
+}
+.noDataCell {
+  @apply text-center p-5 text-xl text-gray-500 font-bold bg-gray-100 border border-gray-300 hover:bg-gray-200;
+}
+
+.tableHeaderCell,
+.tableBody,
+.table-cell, 
+.employeeCell,
+.leaveTypeCell,
+.leaveTypeCellStatus,
+.actionCell,
+.dateColumn {
+  @apply text-left;
+}
+

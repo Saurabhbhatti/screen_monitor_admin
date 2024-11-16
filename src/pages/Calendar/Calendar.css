@@ -1,0 +1,85 @@
+.calendar-panel {
+  @apply mb-5;
+}
+
+.calendar-header {
+  @apply mb-4 flex items-center sm:flex-row flex-col sm:justify-between justify-center;
+}
+
+.calendar-title {
+  @apply text-lg font-semibold text-center;
+}
+
+.calendar-label {
+  @apply legend flex items-center mt-2 flex-wrap sm:justify-start justify-center;
+}
+
+.calendar-label-title {
+  @apply legend-item flex items-center ltr:mr-4 rtl:ml-4;
+}
+
+.calendar-data {
+  @apply h-2.5 w-2.5 rounded-sm ltr:mr-2 rtl:ml-2;
+}
+
+.header-title {
+  @apply sm:mb-0 mb-4;
+}
+
+.daycell {
+  @apply text-lg mt-1 shadow-md;
+}
+
+.weekend-data {
+  @apply text-xs mt-1 shadow-md;
+}
+
+.legend {
+  @apply flex items-center mt-2 flex-wrap sm:justify-start justify-center;
+}
+
+.legend-item {
+  @apply flex items-center ltr:mr-4 rtl:ml-4;
+}
+
+.modal-panel {
+  @apply ltr:w-[550px] rtl:w-[550px] ltr:max-w-lg rtl:max-w-lg;
+}
+
+
+.modal-close-button {
+  @apply top-4 ltr:right-4 rtl:left-4 text-gray-400 hover:text-gray-800 dark:hover:text-gray-600 outline-none;
+}
+
+.modal-header {
+  @apply bg-[#fbfbfb] dark:bg-[#121c2c] ltr:pl-5 rtl:pr-5 py-3 ltr:pr-[50px] rtl:pl-[50px];
+}
+
+.dialog-overlay {
+  @apply fixed inset-0 bg-[black]/60;
+}
+
+.modal-card {
+  @apply fixed inset-0 overflow-y-auto;
+}
+
+.modal-card-container {
+  @apply flex min-h-full items-center justify-center px-4 py-8;
+}
+
+.calendar-item{
+  @apply h-2.5 w-2.5 rounded-full mr-2 bg-primary
+}
+
+.calendar-container{
+  @apply flex flex-col justify-center items-center text-center py-4 px-4 min-w-[100px] rounded-md shadow-md
+}
+
+.calendar-dialog{
+  @apply flex min-h-full items-center justify-center px-4 py-8
+}
+
+.calendar-contain{
+  @apply flex items-center justify-between bg-white shadow-md rounded-md p-2
+}
+

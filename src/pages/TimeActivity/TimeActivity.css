@@ -1,0 +1,616 @@
+.time-activity-container {
+  @apply flex max-h-[200px] items-center justify-between flex-wrap gap-4;
+}
+
+.time-activity-title {
+  @apply text-xl;
+}
+
+.time-activity-search-container {
+  @apply flex sm:flex-row flex-col sm:items-center sm:gap-3 gap-4 w-full sm:w-auto;
+}
+
+.time-activity-input-container {
+  @apply flex items-center space-x-4;
+}
+
+.time-activity-input-wrapper {
+  @apply relative;
+}
+
+.time-activity-search-button {
+  @apply absolute ltr:right-[11px] rtl:left-[11px] top-1/2 -translate-y-1/2 peer-focus:text-primary;
+}
+
+.time-activity-date-picker {
+  @apply border p-2 w-56 rounded-md mt-0;
+}
+
+.time-activity-select {
+  @apply z-30;
+}
+
+.avatar {
+  @apply h-8 w-8 rounded-full object-cover ltr:mr-2 rtl:ml-2;
+}
+
+.table-container {
+  @apply mt-5 p-0 border-0 overflow-hidden flex flex-col;
+}
+
+.table-wrapper {
+  @apply overflow-x-auto;
+}
+
+.table {
+  @apply min-w-full border-collapse;
+}
+
+.table-header-cell {
+  @apply p-10 bg-gray-300 font-extrabold whitespace-pre-line font-bold;
+  padding-left: 0.5rem !important;
+}
+
+.table-header-cell-first,
+.table-header-cell-last {
+  @apply sticky bg-gray-300 font-extrabold;
+}
+
+.table-header-cell-first {
+  @apply left-0;
+}
+
+.table-header-cell-last {
+  @apply right-0;
+}
+
+.table-cell {
+  @apply p-2;
+}
+
+.wo-text {
+  @apply text-gray-700 font-bold;
+}
+
+.table-cell-sticky-left {
+  @apply sticky left-0 bg-white cursor-pointer;
+}
+
+.table-cell-sticky-right {
+  @apply sticky right-0 bg-white;
+}
+
+.table-cell-content {
+  color: transparent;
+  font-size: 12px;
+}
+
+.table-cell-avatar {
+  @apply flex items-center w-[100px];
+}
+
+.table-footer-cell {
+  @apply p-2 font-bold;
+}
+
+.table-footer-cell-first {
+  @apply sticky left-0 bg-white z-10;
+}
+
+.table-footer-cell-last {
+  @apply sticky right-0 bg-white z-10;
+}
+
+.pagination-container {
+  @apply mt-5 flex self-end mr-8;
+}
+
+.pagination-list {
+  @apply inline-flex items-center space-x-1 rtl:space-x-reverse m-auto mb-4;
+}
+
+.pagination-button {
+  @apply flex justify-center font-semibold p-2 rounded-full transition;
+}
+
+.pagination-button-disabled {
+  @apply bg-gray-400 text-white cursor-not-allowed;
+}
+
+.pagination-button-active {
+  @apply bg-primary text-white;
+}
+
+.pagination-button-inactive {
+  @apply bg-white-light text-dark hover:text-white hover:bg-primary;
+}
+
+.pagination-button-dark {
+  @apply dark:text-white-light dark:bg-[#191e3a] dark:hover:bg-primary;
+}
+
+.icon-rotate-90 {
+  @apply w-5 h-5 rotate-90 rtl:rotate-90;
+}
+
+.icon-rotate-negative-90 {
+  @apply w-5 h-5 -rotate-90 rtl:rotate-90;
+}
+
+/* styles.css */
+.fixed-inset {
+  @apply fixed inset-0 bg-[black]/60 z-[999] overflow-y-auto;
+}
+
+.flex-center {
+  @apply flex items-center justify-center min-h-screen px-4;
+}
+
+.panel-custom {
+  @apply border-0 p-0 rounded-lg overflow-hidden w-full max-w-lg my-8 text-black dark:text-white-dark;
+}
+
+.panel-header {
+  @apply flex bg-[#fbfbfb] dark:bg-[#121c2c] items-center justify-between px-5 py-3;
+}
+
+.panel-title {
+  @apply font-bold text-lg;
+}
+
+.panel-close-button {
+  @apply text-white-dark hover:text-dark;
+}
+
+.panel-body {
+  @apply p-5;
+}
+
+.time-activity-item {
+  @apply h-[70vh] grid grid-cols-1 md:grid-cols-2 gap-2;
+}
+
+.time-activity-time {
+  @apply text-[#3b3f5c] dark:text-white-light min-w-[51px] max-w-[100px] text-base font-semibold py-2.5;
+}
+
+.time-activity-dot {
+  @apply relative before:absolute before:left-1/2 before:-translate-x-1/2 before:top-[15px] before:w-2.5 before:h-2.5 before:rounded-full;
+}
+
+.time-activity-dot-secondary {
+  @apply before:border-0 after:absolute after:left-1/2 after:-translate-x-1/2 after:top-[25px] after:-bottom-[15px] after:w-0 after:h-auto after:border-l-2;
+}
+
+.time-activity-dot-primary {
+  @apply before:border-2 before:border-primary after:absolute after:left-1/2 after:-translate-x-1/2 after:top-[25px] after:-bottom-[15px] after:w-0 after:h-auto after:border-l-2 after:border-primary;
+}
+
+.time-activity-dot-success {
+  @apply before:border-2 before:border-success after:absolute after:left-1/2 after:-translate-x-1/2 after:top-[25px] after:-bottom-[15px] after:w-0 after:h-auto after:border-l-2 after:border-success;
+}
+
+.time-activity-dot-danger {
+  @apply before:border-2 before:border-danger after:absolute after:left-1/2 after:-translate-x-1/2 after:top-[25px] after:-bottom-[15px] after:w-0 after:h-auto after:border-l-2 after:border-danger;
+}
+
+.time-activity-dot-warning {
+  @apply before:border-2 before:border-warning after:absolute after:left-1/2 after:-translate-x-1/2 after:top-[25px] after:-bottom-[15px] after:w-0 after:h-auto after:border-l-2 after:border-warning;
+}
+
+.time-activity-dot-info {
+  @apply before:border-2 before:border-info;
+}
+
+.time-activity-details {
+  @apply p-2.5 self-center rtl:ltr:mr-2.5 rtl:ml-2.5 w-96 max-h-24;
+}
+
+.time-activity-text {
+  @apply text-[#3b3f5c] dark:text-white-light font-semibold text-[13px];
+}
+
+.time-activity-duration {
+  @apply text-white-dark text-xs font-bold self-center min-w-[100px] max-w-[600px];
+}
+
+.chart-container {
+  @apply bg-white dark:bg-black rounded-lg;
+}
+
+.chart-container-height {
+  @apply h-full w-full max-h-[400px];
+}
+
+.sub-chart {
+  @apply min-h-[325px] grid place-content-center bg-white-light/30 dark:bg-dark dark:bg-opacity-[0.08];
+}
+
+.chart-loading {
+  @apply animate-spin border-2 border-black dark:border-white !border-l-transparent rounded-full w-5 h-5 inline-flex;
+}
+
+.dsr-content {
+  @apply text-[#3b3f5c] dark:text-white-light font-semibold text-[13px] ml-5;
+}
+
+.timeline-activity {
+  @apply flex-1 overflow-y-auto;
+}
+
+.timeline-container {
+  @apply max-w-[500px] flex flex-col h-[70vh];
+}
+
+.time-line-header {
+  @apply text-2xl font-medium py-0;
+}
+
+.timeline-user {
+  @apply flex justify-start w-full text-lg py-0 ltr:pr-[5px];
+  font-size: 0.85rem;
+}
+
+.header-content {
+  @apply grid grid-cols-1 md:grid-cols-1;
+}
+
+.auto-checkout-dot {
+  @apply h-2 w-2 rounded bg-red-500 inline-block ml-2;
+}
+
+.time-activity-main {
+  @apply grid grid-cols-1 md:grid-cols-1 gap-6;
+}
+
+.dsr-content {
+  @apply flex-1 overflow-y-auto max-w-[500px] h-[16vh] ltr:pl-5 rtl:pr-5 py-3 ltr:pr-[50px] rtl:pl-[50px];
+}
+
+.loder {
+  @apply flex justify-center items-center w-[58vw] h-[88vh];
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.plus-button {
+  @apply w-8 h-8 border-2 border-gray-700 rounded-full hover:border-gray-400;
+}
+
+.label-header {
+  @apply block font-semibold text-lg;
+}
+
+.select-project {
+  @apply select-user;
+}
+
+.select-user {
+  @apply w-48 ml-2;
+}
+
+.date-picker-container {
+  @apply flex items-center space-x-4;
+}
+
+.time-details {
+  @apply flex justify-between mt-4;
+}
+
+.time-section {
+  @apply w-1/2;
+}
+
+.date-picker-label {
+  @apply block font-semibold text-lg;
+}
+
+.time-input {
+  @apply title-description;
+}
+
+.time-display {
+  @apply flex mt-8;
+}
+
+.time-label {
+  @apply block text-lg;
+}
+
+.time-subtext {
+  @apply block font-normal mt-1 text-base;
+}
+
+.description-container {
+  @apply mt-8;
+}
+
+.description-label {
+  @apply block font-semibold text-lg;
+}
+
+.title-description {
+  @apply w-full border rounded p-2 mt-1;
+}
+
+.action-button {
+  @apply mt-4 flex justify-end;
+}
+
+.button-cancel {
+  @apply bg-red-500 text-white border rounded px-4 py-2;
+}
+
+.button-apply {
+  @apply ml-6 bg-blue-500 text-white rounded px-4 py-2;
+}
+
+.validation-error {
+  @apply text-red-600 text-left mb-4;
+}
+
+.chart-container-dsr {
+  @apply h-[70vh] grid grid-cols-1 md:grid-cols-1 gap-6;
+}
+
+.time-activity-main-div {
+  @apply w-[58vw] h-[88vh];
+}
+
+.time-hours-Tracked {
+  @apply flex;
+}
+
+.dsr-details {
+  @apply h-[26vh] mt-4 mb-4;
+}
+
+.title-head {
+  @apply text-lg font-medium bg-[#fbfbfb] dark:bg-[#121c2c] ltr:pl-5 rtl:pr-5 py-3 ltr:pr-[50px] rtl:pl-[50px];
+}
+
+.time-line-dsr {
+  @apply flex justify-center text-2xl pt-8;
+}
+
+@media (max-width: 320px) {
+
+  .apexcharts-datalabel-label,
+  .apexcharts-datalabel-value {
+    @apply text-xs;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+  .time-activity-main-div {
+    @apply h-[87vh] w-[81vw];
+  }
+
+  .loder {
+    @apply flex justify-center items-center w-[58vw] h-[88vh];
+  }
+
+  .time-activity-input-container {
+    @apply space-x-0 contents;
+  }
+
+  .time-activity-input-wrapper,
+  .time-activity-date-picker {
+    @apply w-full;
+  }
+
+  .apexcharts-datalabel-label,
+  .apexcharts-datalabel-value {
+    @apply text-lg;
+  }
+
+  .time-line-dsr {
+    @apply text-sm;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+  .time-activity-main-div {
+    @apply h-[87vh] overflow-auto;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+
+  .time-activity-text,
+  .timeline-user,
+  .time-activity-time,
+  .title-head,
+  .dsr-content,
+  .time-line-dsr {
+    @apply text-xs;
+  }
+
+  .time-line-header {
+    @apply text-base;
+  }
+
+  .time-activity-item {
+    @apply grid-cols-1 gap-2;
+  }
+
+  .time-activity-input-container {
+    @apply space-x-0 contents;
+  }
+
+  .time-activity-input-wrapper,
+  .time-activity-date-picker {
+    @apply w-full;
+  }
+
+  .time-activity-main-div {
+    @apply h-[87vh] w-[80vw] overflow-auto;
+  }
+
+  .loder {
+    @apply flex justify-center items-center w-[70vw] h-[80vh];
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .time-activity-main-div {
+    @apply w-[70vw] h-[87vh];
+  }
+
+  .timeline-container {
+    @apply h-[69vh];
+  }
+
+  .title-head {
+    @apply pt-0 pb-0;
+  }
+
+  .dsr-content,
+  .dsr-details {
+    @apply h-[22vh];
+  }
+
+  .time-activity-text,
+  .timeline-user,
+  .time-activity-time,
+  .title-head,
+  .dsr-content,
+  .time-line-dsr {
+    @apply text-sm;
+  }
+
+  .time-line-header {
+    @apply text-2xl;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+
+  .time-activity-text,
+  .time-activity-time,
+  .title-head,
+  .dsr-content,
+  .timeline-user,
+  .time-line-dsr {
+    @apply text-sm;
+  }
+
+  .time-line-header {
+    @apply text-2xl;
+  }
+
+  .time-activity-time,
+  .time-activity-duration {
+    @apply text-sm;
+  }
+
+  .dsr-details,
+  .dsr-content {
+    @apply h-[19vh];
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+
+  .time-activity-text,
+  .time-activity-time,
+  .title-head,
+  .dsr-content,
+  .timeline-user,
+  .time-activity-duration,
+  .time-line-dsr {
+    @apply text-sm;
+  }
+
+  .time-line-header {
+    @apply text-2xl;
+  }
+
+  .dsr-details {
+    @apply h-[32vh];
+  }
+
+  .dsr-content {
+    @apply h-[23vh];
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 2560px) {
+
+  .time-activity-text,
+  .time-activity-time,
+  .title-head,
+  .dsr-content,
+  .timeline-user,
+  .time-line-dsr {
+    @apply text-xl;
+  }
+
+  .time-line-header {
+    @apply text-3xl;
+  }
+
+  .time-activity-time,
+  .time-activity-duration {
+    @apply text-base;
+  }
+
+  .dsr-details,
+  .dsr-content {
+    @apply h-[32vh] mb-0;
+  }
+}
+
+@media (min-width: 2560px) {
+
+  .title-head,
+  .dsr-content,
+  .timeline-user,
+  .time-activity-time,
+  .time-activity-text,
+  .time-line-dsr {
+    @apply text-2xl;
+  }
+
+  .time-line-header {
+    @apply text-[2.5rem];
+  }
+
+  .time-activity-time {
+    @apply min-w-[76px] leading-[3.5rem];
+  }
+
+  .time-activity-duration {
+    @apply text-lg;
+  }
+
+  .time-activity-dot-secondary::after {
+    @apply border-l-[5px];
+  }
+
+  .time-activity-main-div {
+    @apply w-[44vw] h-[92vh];
+  }
+
+  .timeline-container {
+    @apply h-[85vh];
+  }
+
+  .time-activity-item {
+    @apply h-[80vh] grid-cols-2 gap-8;
+  }
+
+  .chart-container-height {
+    @apply max-h-[500px];
+  }
+
+  .dsr-details,
+  .dsr-content {
+    @apply h-[35vh];
+  }
+}

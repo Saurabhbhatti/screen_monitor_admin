@@ -1,0 +1,7 @@
+.search-input {
+  @apply w-full h-10 rounded-md border border-white-light bg-white px-4 py-2 text-sm font-semibold text-black !outline-none focus:border-primary focus:ring-transparent dark:border-[#17263c] dark:bg-[#121e32] dark:text-white-dark dark:focus:border-primary py-2 ltr:pr-11 rtl:pl-11;
+}
+
+.search-btn {
+  @apply absolute ltr:right-[11px] rtl:left-[11px] top-1/2 -translate-y-1/2 peer-focus:text-primary;
+}

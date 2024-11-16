@@ -1,0 +1,97 @@
+.modalOverlay {
+  @apply fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50;
+}
+
+.modalContainer {
+  @apply bg-white rounded-lg shadow-lg p-6 w-[400px] max-w-4xl relative max-h-[95vh] overflow-y-auto;
+}
+
+
+.closeButton {
+  @apply absolute top-2 right-2 text-red-400 text-3xl hover:text-gray-800;
+}
+
+.header {
+  @apply text-2xl font-bold mb-4;
+}
+
+.formGroup {
+  @apply space-y-4;
+}
+
+.fieldContainer {
+  @apply flex flex-col flex-wrap gap-4 mb-4; 
+}
+
+.field {
+  @apply flex-1;
+}
+
+.fieldLabel {
+  @apply block text-gray-700 mb-1;
+}
+
+.fieldInput {
+  @apply w-full p-2 border border-gray-300 rounded transition-colors duration-300 ease-in-out focus:border-blue-500; /* Included transition for smooth focus effect */
+}
+
+.submitButton {
+  @apply bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300 ease-in-out; /* Hover effect */
+}
+
+.scrollableTableContainer {
+  max-height: 200px;
+  overflow-y: auto; 
+}
+
+.buttonContainer {
+  @apply p-1;
+}
+
+.applyButton {
+  @apply flex items-center border-primary bg-primary shadow-primary/60 text-white px-4 py-2 rounded transition-colors duration-300 ease-in-out; /* Added transition for consistency */
+}
+
+.applyButton i {
+  @apply mr-2; 
+}
+
+.errorMessageBox {
+  @apply bg-red-100 text-red-700 p-2 mb-5 border border-red-300 rounded text-sm text-center;
+}
+
+.successMessageBox {
+  @apply text-green-600 my-2 font-bold;
+}
+
+.errorMessage {
+  @apply text-red-500 text-xs mt-1;
+}
+
+.fieldInput.error {
+  @apply border-red-500; 
+}
+
+.leaveTable {
+  @apply w-full border-collapse; 
+}
+
+.leaveTable th, .leaveTable td {
+  @apply border border-gray-300 p-2; 
+}
+
+.leaveTable th {
+  @apply bg-gray-200 text-left; 
+}
+
+.deleteButton {
+  @apply bg-red-500 text-white px-2 py-1 rounded hover:bg-red-600 transition-colors duration-300 ease-in-out; /* Delete button style with hover effect */
+}
+
+input[type="checkbox"] {
+  @apply rounded;
+}
+
+.Loader {
+ @apply inline-block h-4 w-4 animate-spin rounded-full border-2 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]
+}

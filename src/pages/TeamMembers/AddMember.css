@@ -1,0 +1,55 @@
+.add-member-dialog {
+  @apply relative z-50;
+}
+
+.add-member-overlay {
+  @apply fixed inset-0 bg-black/60;
+}
+
+.add-member-container {
+  @apply fixed inset-0 flex items-center justify-center px-3 py-5 overflow-hidden;
+}
+
+.add-member-panel {
+  @apply border-0 p-0 rounded-lg overflow-hidden w-full max-w-lg max-h-full bg-white shadow-lg relative;
+}
+
+.add-member-close-button {
+  @apply text-gray-400 hover:text-gray-800 outline-none ;
+}
+
+.add-member-header {
+  @apply text-lg font-medium bg-gray-100 py-3 px-5 text-center;
+}
+
+.add-member-body {
+  @apply p-5 overflow-y-auto max-h-[calc(100vh-8rem)] text-left;
+}
+
+.add-member-form-group {
+  @apply mb-5;
+}
+
+.add-member-input {
+  @apply form-input mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50;
+}
+
+.add-member-select {
+  @apply form-select mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50;
+}
+
+.add-member-footer {
+  @apply flex justify-end items-center mt-8;
+}
+
+.add-member-add-button {
+  @apply ml-4;
+}
+
+.add-button {
+  @apply bg-blue-500 ml-5;
+}
+
+.cancel-button {
+  @apply border-red-500 text-red-500;
+}

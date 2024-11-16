@@ -1,0 +1,76 @@
+/* TimeRegulateTable Styles */
+.table-container {
+  @apply mt-5 p-0 border-0 overflow-hidden flex flex-col bg-white shadow-md rounded-md;
+}
+
+.table-wrapper {
+  @apply overflow-auto;
+}
+
+.table {
+  @apply w-full table-auto border-collapse;
+}
+
+.table-head {
+  @apply bg-gray-100;
+  text-wrap: nowrap;
+}
+
+.table-header {
+  @apply py-3 px-4 text-left text-sm font-bold text-gray-700 border-b;
+  text-wrap: nowrap;
+}
+
+.table-body {
+  @apply bg-white divide-y divide-gray-200;
+}
+
+.table-row {
+  @apply hover:bg-gray-50;
+}
+
+.table-cell {
+  @apply py-2 px-4;
+}
+
+.status-approved {
+  @apply text-green-600;
+}
+
+.status-rejected {
+  @apply text-red-600;
+}
+
+.status-pending {
+  @apply text-yellow-600;
+}
+
+.action-buttons {
+  @apply flex gap-2 items-center m-0;
+}
+
+.approve-btn {
+  @apply text-green-600 rounded transition;
+}
+
+.approve-btn:hover {
+  background-color: green;
+  color: white
+}
+
+.reject-btn {
+  @apply text-red-600 rounded transition;
+}
+
+.reject-btn:hover {
+  background-color: red;
+  color: white
+}
+
+.custom-tooltip {
+  @apply w-auto h-auto whitespace-normal;
+}
+
+.custom-tooltip-content {
+  @apply m-0 p-0 text-xs;
+}

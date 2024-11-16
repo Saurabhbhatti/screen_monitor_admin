@@ -1,0 +1,12 @@
+.modal-container {
+  @apply fixed inset-0 z-[999] px-4 overflow-y-auto;
+}
+
+.modal-contain {
+  @apply flex items-center justify-center min-h-screen;
+}
+
+.dialog-contain{
+  @apply border-0 p-0 rounded-lg overflow-hidden w-full max-w-lg text-black dark:text-white-dark;
+}
+
